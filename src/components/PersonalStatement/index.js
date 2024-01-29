@@ -9,7 +9,7 @@ export default function PersonalStatement() {
             </PersonalStatementTypography>
             <Stack direction={'row'} spacing={2}>
                 {skillsList.map((item, index) => (
-                    <TechnicalChips label={item}/>
+                    <TechnicalChips label={item} key={index}/>
                 ))}
             </Stack>
         </PersonalStatementWrapper>

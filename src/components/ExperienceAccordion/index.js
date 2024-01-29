@@ -12,7 +12,7 @@ export default function ExperienceAccordion({}) {
                 01/20 - Present
             </ExperiencenHeaderSecondary>
             {ExperienceList.map((position, index) => (
-                <Accordion>
+                <Accordion key={index}>
                     <AccordionSummary
                         expandIcon={<ExpandMoreIcon />}
                     >
