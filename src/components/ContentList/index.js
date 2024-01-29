@@ -7,8 +7,8 @@ export default function ContentList() {
             <ContentListHeading>
                 Content List
             </ContentListHeading>
-            {pageList.map((item) => (
-                <React.Fragment>
+            {pageList.map((item, index) => (
+                <React.Fragment key={item.title}>
                     <ContentListSubHeading>
                         {item.title}
                     </ContentListSubHeading>
