@@ -1,7 +1,7 @@
 import PhotoTransition from "@/components/PhotoTransitionTile"
 import WelcomeText from "@/components/WelcomeText"
 import ContentList from "@/components/ContentList"
-import selfie from 'src/media/selfie.JPG'
+import selfie from 'src/media/selfie.jpg'
 
 export default function Home() {
   return (

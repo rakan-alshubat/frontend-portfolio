@@ -6,7 +6,7 @@ import PictureAsPdfIcon from '@mui/icons-material/PictureAsPdf';
 import Image from 'next/image'
 import Link from 'next/link';
 import { Grid } from '@mui/material';
-import ContactInfo from 'src/media/contactInfo.JPG'
+import ContactInfo from 'src/media/contactInfo.jpg'
 import { NavbarContactCard, ContactCardGridContainer, ContactCardList, ContactCardTypography, ContactCardLinks } from "./contactInfoModal.styles"
 
 export default function ContactInfoModal() {

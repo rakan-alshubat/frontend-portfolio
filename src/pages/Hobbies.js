@@ -1,11 +1,11 @@
 import WelcomeText from "@/components/WelcomeText";
 import PhotoTransitionTile from "@/components/PhotoTransitionTile";
-import VideoGames from 'src/media/Video-Games.JPG'
-import BoardGames from 'src/media/Board-Games.JPG'
-import Dogs from 'src/media/Dogs.JPG'
-import Camping from 'src/media/Camping.JPG'
-import Halloween from 'src/media/Halloween.JPG'
-import Festival from 'src/media/Festival.JPG'
+import VideoGames from 'src/media/Video-Games.jpg'
+import BoardGames from 'src/media/Board-Games.jpg'
+import Dogs from 'src/media/Dogs.jpg'
+import Camping from 'src/media/Camping.jpg'
+import Halloween from 'src/media/Halloween.jpg'
+import Festival from 'src/media/Festival.jpg'
 
 
 export default function Hobbies() {

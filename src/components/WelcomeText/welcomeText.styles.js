@@ -1,6 +1,6 @@
 import { Box, Typography } from "@mui/material";
 import { styled } from "@mui/material/styles";
-import TitleBackground from 'src/media/TitleBackground.JPG'
+import TitleBackground from 'src/media/TitleBackground.jpg'
 
 export const WelcomeTextMainBox = styled(Box)(({ theme }) => ({
     marginTop: theme.spacing(10),

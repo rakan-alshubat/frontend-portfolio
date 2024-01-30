@@ -4,7 +4,7 @@ import Divider from '@mui/material/Divider';
 import MenuIcon from '@mui/icons-material/Menu'
 import ClearIcon from '@mui/icons-material/Clear';
 import ContactInfoModal from "../ContactInfoModal";
-import ContactInfo from 'src/media/contactInfo.JPG'
+import ContactInfo from 'src/media/contactInfo.jpg'
 import { MainNavbar, GridItemWrapper, NavbarTitleTypography, NavbarBurgerButton, ContactModalPhoto, DrawerItemsButton } from "./navbar.styles"
 
 export default function Navbar() {
