@@ -70,12 +70,12 @@ export default function Navbar() {
                         </Drawer>
                     </React.Fragment>
                 </GridItemWrapper>
-                <GridItemWrapper item xs={11}>
+                <GridItemWrapper item xs={10.5}>
                     <NavbarTitleTypography>
                         Rakan Alshubat
                     </NavbarTitleTypography>
                 </GridItemWrapper>
-                <GridItemWrapper item xs={0.5}>
+                <GridItemWrapper item xs={1}>
                     <Button onClick={handleOpen}>
                         <ContactModalPhoto
                             src={ContactInfo}

@@ -23,7 +23,7 @@ export default function MyApp(props) {
       </Head>
       <ThemeProvider theme={theme}>
         <CssBaseline />
-        <div style={{ backgroundImage: `url(${Background.src})`, backgroundSize: 'cover', backgroundSize: 'auto'}}>.
+        <div style={{ backgroundImage: `url(${Background.src})`, backgroundSize: 'cover', backgroundSize: 'f'}}>.
           <Component {...pageProps} />.
         </div>
       </ThemeProvider>

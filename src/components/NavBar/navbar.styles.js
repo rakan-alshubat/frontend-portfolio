@@ -25,8 +25,8 @@ export const NavbarBurgerButton = styled(IconButton)(({}) => ({
     color: 'white'
 }));
 
-export const ContactModalPhoto = styled(Image)(({}) => ({
-    borderRadius: '50%'
+export const ContactModalPhoto = styled(Image)(({ theme }) => ({
+    borderRadius: '50%',
 }));
 
 export const DrawerItemsButton = styled(Button)(({}) => ({

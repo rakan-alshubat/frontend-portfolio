@@ -2,20 +2,12 @@ import PhoneIcon from '@mui/icons-material/Phone';
 import EmailIcon from '@mui/icons-material/Email';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
-import PictureAsPdfIcon from '@mui/icons-material/PictureAsPdf';
 import Image from 'next/image'
-import Link from 'next/link';
 import { Grid } from '@mui/material';
 import ContactInfo from 'src/media/contactInfo.jpg'
 import { NavbarContactCard, ContactCardGridContainer, ContactCardList, ContactCardTypography, ContactCardLinks } from "./contactInfoModal.styles"
 
 export default function ContactInfoModal() {
-
-    const handleDownload = async () => {
-        const response = await fetch('src/pages/api/route');
-        console.log(response)
-
-    };
 
     return (
         <NavbarContactCard>

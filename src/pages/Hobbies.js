@@ -15,7 +15,7 @@ export default function Hobbies() {
         title={'Welcome to the hobbies page'}
         content={'The page is meant to give a glimse on who I am outside of a professional context. What I enjoy doing in my free time. If I match the skill set needed for the position, why not find out if I\'m a cultural fit too!'}
       />
-      <PhotoTransitionTile 
+      {/* <PhotoTransitionTile 
         imageName={VideoGames}
         width={600}
         height={400}
@@ -68,7 +68,7 @@ export default function Hobbies() {
         imageText={'Getting some friends together to play a bunch of board games will always be my suggested Friday night! I have a big collection so we will always have something for whatever occasion. From simple card games to deep strategy games.'}
         rowDirection={'row-reverse'}
         slideDirection={'right'}
-      />
+      /> */}
       </>
     )
   }
