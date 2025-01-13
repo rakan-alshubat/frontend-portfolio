@@ -1,7 +1,6 @@
 import BarChart from "@/components/BarChartContainer";
 import WelcomeText from "@/components/WelcomeText";
 import calculatePoints from '@/helpers/calculatePoints'
-import QueenSelection from "@/components/QueenSelection";
 
 export default function DragRace() {
   var points
