@@ -33,7 +33,7 @@ export default function DragRace() {
     return (
       <>
         <WelcomeText
-          title={'Rakan\'s Fantasy Drag Race League! :) yay'}
+          title={'Rakan\'s Fantasy Drag Race League! :)'}
         />
         <BarChart />
         <Button onClick={() => pullFiles()}>test</Button>
