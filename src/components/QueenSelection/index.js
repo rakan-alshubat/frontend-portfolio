@@ -16,98 +16,98 @@ import {
 import { TextField } from '@mui/material';
 
 export default function QueenSelection() {
-    const [one, setOne] = React.useState('');
-    const [two, setTwo] = React.useState('');
-    const [three, setThree] = React.useState('');
-    const [four, setFour] = React.useState('');
-    const [five, setFive] = React.useState('');
-    const [six, setSix] = React.useState('');
-    const [seven, setSeven] = React.useState('');
-    const [eight, setEight] = React.useState('');
-    const [nine, setNine] = React.useState('');
-    const [ten, setTen] = React.useState('');
-    const [eleven, setEleven] = React.useState('');
-    const [twelve, setTwelve] = React.useState('');
-    const [thirtheen, setThirteen] = React.useState('');
-    const [fourteen, setFourteen] = React.useState('');
-    const [goldenBoot, setGoldenBoot] = React.useState('');
-    const [missC, setMissC] = React.useState('');
-    const [leverQueen, setLeverQueen] = React.useState('');
-    const [leverNumber, setLeverNumber] = React.useState('');
-    const [playerName, setPlayerName] = React.useState('');
-    const [playerPassword, setPlayerPassword] = React.useState('');
-    const [error, setError] = React.useState(false);
+    // const [one, setOne] = React.useState('');
+    // const [two, setTwo] = React.useState('');
+    // const [three, setThree] = React.useState('');
+    // const [four, setFour] = React.useState('');
+    // const [five, setFive] = React.useState('');
+    // const [six, setSix] = React.useState('');
+    // const [seven, setSeven] = React.useState('');
+    // const [eight, setEight] = React.useState('');
+    // const [nine, setNine] = React.useState('');
+    // const [ten, setTen] = React.useState('');
+    // const [eleven, setEleven] = React.useState('');
+    // const [twelve, setTwelve] = React.useState('');
+    // const [thirtheen, setThirteen] = React.useState('');
+    // const [fourteen, setFourteen] = React.useState('');
+    // const [goldenBoot, setGoldenBoot] = React.useState('');
+    // const [missC, setMissC] = React.useState('');
+    // const [leverQueen, setLeverQueen] = React.useState('');
+    // const [leverNumber, setLeverNumber] = React.useState('');
+    // const [playerName, setPlayerName] = React.useState('');
+    // const [playerPassword, setPlayerPassword] = React.useState('');
+    // const [error, setError] = React.useState(false);
 
-    var rankings = []
+    // var rankings = []
 
-    const handleOne = (event) => {
-        rankings[1] = event.target.value
-        setOne(event.target.value);
-    };
-    const handleTwo = (event) => {
-        rankings[2] = event.target.value
-        setTwo(event.target.value);
-    };
-    const handleThree = (event) => {
-        rankings[3] = event.target.value
-        setThree(event.target.value);
-    };
-    const handleFour = (event) => {
-        rankings[4] = event.target.value
-        setFour(event.target.value);
-    };
-    const handleFive = (event) => {
-        rankings[5] = event.target.value
-        setFive(event.target.value);
-    };
-    const handleSix = (event) => {
-        rankings[6] = event.target.value
-        setSix(event.target.value);
-    };
-    const handleSeven = (event) => {
-        rankings[7] = event.target.value
-        setSeven(event.target.value);
-    };
-    const handleEight = (event) => {
-        rankings[8] = event.target.value
-        setEight(event.target.value);
-    };
-    const handleNine = (event) => {
-        rankings[9] = event.target.value
-        setNine(event.target.value);
-    };
-    const handleTen = (event) => {
-        rankings[10] = event.target.value
-        setTen(event.target.value);
-    };
-    const handleEleven = (event) => {
-        rankings[11] = event.target.value
-        setEleven(event.target.value);
-    };
-    const handleTwelve = (event) => {
-        rankings[12] = event.target.value
-        setTwelve(event.target.value);
-    };
-    const handleThirteen = (event) => {
-        rankings[13] = event.target.value
-        setThirteen(event.target.value);
-    };
-    const handleFourteen = (event) => {
-        rankings[14] = event.target.value
-        setFourteen(event.target.value);
-    };
-    const handleGoldenBoot = (event) => {
-        setGoldenBoot(event.target.value);
-    };
-    const handleMissC = (event) => {
-        setMissC(event.target.value);
-    };
-    const handleLeverQueen = (event) => {
-        setLeverQueen(event.target.value);
-    };
-    const handleLeverNumber = (event) => {
-        setLeverNumber(event.target.value);
-    };
+    // const handleOne = (event) => {
+    //     rankings[1] = event.target.value
+    //     setOne(event.target.value);
+    // };
+    // const handleTwo = (event) => {
+    //     rankings[2] = event.target.value
+    //     setTwo(event.target.value);
+    // };
+    // const handleThree = (event) => {
+    //     rankings[3] = event.target.value
+    //     setThree(event.target.value);
+    // };
+    // const handleFour = (event) => {
+    //     rankings[4] = event.target.value
+    //     setFour(event.target.value);
+    // };
+    // const handleFive = (event) => {
+    //     rankings[5] = event.target.value
+    //     setFive(event.target.value);
+    // };
+    // const handleSix = (event) => {
+    //     rankings[6] = event.target.value
+    //     setSix(event.target.value);
+    // };
+    // const handleSeven = (event) => {
+    //     rankings[7] = event.target.value
+    //     setSeven(event.target.value);
+    // };
+    // const handleEight = (event) => {
+    //     rankings[8] = event.target.value
+    //     setEight(event.target.value);
+    // };
+    // const handleNine = (event) => {
+    //     rankings[9] = event.target.value
+    //     setNine(event.target.value);
+    // };
+    // const handleTen = (event) => {
+    //     rankings[10] = event.target.value
+    //     setTen(event.target.value);
+    // };
+    // const handleEleven = (event) => {
+    //     rankings[11] = event.target.value
+    //     setEleven(event.target.value);
+    // };
+    // const handleTwelve = (event) => {
+    //     rankings[12] = event.target.value
+    //     setTwelve(event.target.value);
+    // };
+    // const handleThirteen = (event) => {
+    //     rankings[13] = event.target.value
+    //     setThirteen(event.target.value);
+    // };
+    // const handleFourteen = (event) => {
+    //     rankings[14] = event.target.value
+    //     setFourteen(event.target.value);
+    // };
+    // const handleGoldenBoot = (event) => {
+    //     setGoldenBoot(event.target.value);
+    // };
+    // const handleMissC = (event) => {
+    //     setMissC(event.target.value);
+    // };
+    // const handleLeverQueen = (event) => {
+    //     setLeverQueen(event.target.value);
+    // };
+    // const handleLeverNumber = (event) => {
+    //     setLeverNumber(event.target.value);
+    // };
     const createFile = async () => {
         if(!rankings.includes('') && 
             !rankings.some((val, i) => rankings.indexOf(val) !== i) &&
