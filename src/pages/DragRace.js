@@ -3,7 +3,6 @@ import BarChart from "@/components/BarChartContainer";
 import WelcomeText from "@/components/WelcomeText";
 import calculatePoints from '@/helpers/calculatePoints'
 import gameData from '../files/gameData'
-import { Button } from '@mui/material';
 
 export default function DragRace() {
   var points
@@ -36,7 +35,6 @@ export default function DragRace() {
           title={'Rakan\'s Fantasy Drag Race League! :)'}
         />
         <BarChart />
-        <Button onClick={() => pullFiles()}>test</Button>
       </>
     )
   }
