@@ -23,4 +23,5 @@ export const BarChartBottomPlayersGrid = styled(Grid)(({ theme }) => ({
     direction: 'column',
     alignItems:'center',
     justifyContent:'center',
+    paddingLeft: theme.spacing(3)
 }));

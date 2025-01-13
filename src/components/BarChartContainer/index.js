@@ -1,4 +1,7 @@
 import { BarChart } from '@mui/x-charts/BarChart';
+import {playerData} from '../../files/playerData'
+import calculatePoints from '@/helpers/calculatePoints'
+import gameData from '../../files/gameData'
 import {
     BarChartTop3Grid, 
     BarChartMainGrid,
@@ -6,7 +9,7 @@ import {
     Top3Text,
  } from "./BarChartContainer.styles";
 
-export default function BarChartContainer(playerRanking) {
+export default function BarChartContainer() {
 
     const colors = [
         '#C0C0C0',
@@ -14,18 +17,30 @@ export default function BarChartContainer(playerRanking) {
         '#CD7F32',
     ];
 
-    playerData.sort(function(a, b) {
+    var players = []
+
+
+    playerData.map((player) => {
+        const name = player.playerName;
+        const points = calculatePoints(player, gameData.eleminationsList, gameData.winnersList)
+        players.push({
+            "playerName": name,
+            "totalPoints": points
+        })
+    })
+
+    players.sort(function(a, b) {
         if(a.totalPoints < b.totalPoints) return 1
         if(a.totalPoints > b.totalPoints) return -1
         return 0
     })
 
-    var top3 = playerData.slice(0,3)
+    var top3 = players.slice(0,3)
     var temp = top3[0]
     top3[0] = top3[1]
     top3[1] = temp
 
-    var bottomPlayers = playerData.slice(3, playerData.length)
+    var bottomPlayers = players.slice(3, players.length)
 
     return(
         <BarChartMainGrid container>
@@ -81,7 +96,7 @@ export default function BarChartContainer(playerRanking) {
                     }}
                 />
             </BarChartTop3Grid>
-            <BarChartBottomPlayersGrid item sm={3} xs={12}>
+            <BarChartBottomPlayersGrid item sm={8} xs={12}>
                 <Top3Text>
                     Bottom Queens
                 </Top3Text>
@@ -125,42 +140,3 @@ export default function BarChartContainer(playerRanking) {
         </BarChartMainGrid>
     )
 }
-
-const playerData = [
-    {
-        playerName: 'Rakan',
-        totalPoints: 50
-    },
-    {
-        playerName: 'jack',
-        totalPoints: 40
-    },
-    {
-        playerName: 'tom',
-        totalPoints: 45
-    },
-    {
-        playerName: 'cam',
-        totalPoints: 65
-    },
-    {
-        playerName: 'greg',
-        totalPoints: 25
-    },
-    {
-        playerName: 'pete',
-        totalPoints: 32
-    },
-    {
-        playerName: 'colin',
-        totalPoints: 42
-    },
-    {
-        playerName: 'rex',
-        totalPoints: 20
-    },
-    {
-        playerName: 'lola',
-        totalPoints: 5
-    },
-  ]
