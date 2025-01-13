@@ -1,15 +1,26 @@
 import { BarChart } from '@mui/x-charts/BarChart';
 import {playerData} from '../../files/playerData'
 import calculatePoints from '@/helpers/calculatePoints'
+import { Accordion, AccordionSummary, AccordionDetails } from "@mui/material"
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import gameData from '../../files/gameData'
 import {
     BarChartTop3Grid, 
     BarChartMainGrid,
     BarChartBottomPlayersGrid,
     Top3Text,
+    PlayersAccordionWrapper,
+    PlayersHeader,
+    PlayerAccordionMainTitle,
+    PlayerAccordionSecondaryTitle,
+    PlayersListMainGrid,
+    PlayersRankedQueens,
+    Playersadditional
  } from "./BarChartContainer.styles";
 
 export default function BarChartContainer() {
+
+      var hasItStarted = gameData.winnersList.length > 0
 
     const colors = [
         '#C0C0C0',
@@ -41,9 +52,12 @@ export default function BarChartContainer() {
     top3[1] = temp
 
     var bottomPlayers = players.slice(3, players.length)
+    var bottomPlayersChartHeight = 50* players.length
 
     return(
         <BarChartMainGrid container>
+            {hasItStarted &&
+            <>
             <BarChartTop3Grid item sm={8} xs={12}>
                 <Top3Text>
                     Top 3 Queens
@@ -106,11 +120,14 @@ export default function BarChartContainer() {
                         yAxis={[{
                             scaleType: 'band', 
                             dataKey: 'playerName',
-                            tickFontSize: 15,
+                            tickLabelStyle: {
+                                angle: -50,
+                                fontSize: 15,
+                            },
                         }]}
                         series={[{ dataKey: 'totalPoints' }]}
-                        barLabel="value"
-                        height={500}
+                        barLabel={(v)=> `${v.value}`}
+                        height={bottomPlayersChartHeight}
                         sx={{
                             //change left yAxis label styles
                             "& .MuiChartsAxis-left .MuiChartsAxis-tickLabel":{
@@ -137,6 +154,58 @@ export default function BarChartContainer() {
                         }}
                     />
             </BarChartBottomPlayersGrid>
+            </>}
+            <PlayersAccordionWrapper item xs={12}>
+                <PlayersHeader>
+                        Players:
+                </PlayersHeader>
+                {playerData.map((player, index) => (
+                    <Accordion key={index}>
+                        <AccordionSummary
+                            expandIcon={<ExpandMoreIcon />}>
+                                <PlayerAccordionMainTitle>
+                                    {player.playerName}
+                                </PlayerAccordionMainTitle>
+                                {player.playerWinners[0] !== '' &&
+                                <PlayerAccordionSecondaryTitle>
+                                    Players Maxi winner of the week: {player.playerWinners[0]}
+                                </PlayerAccordionSecondaryTitle>
+                                }
+                        </AccordionSummary>
+                        <AccordionDetails>
+                            <PlayersListMainGrid container>
+                                {player.playerRankings.map((queen, index) => (
+                                    <>
+                                        <PlayersRankedQueens item xs={1}>
+                                            {index+1}
+                                        </PlayersRankedQueens>
+                                        <PlayersRankedQueens item xs={11}>
+                                            {queen}
+                                        </PlayersRankedQueens>
+                                    </>
+                                ))}
+                                <Playersadditional>
+                                    <PlayersRankedQueens>
+                                        Miss Congeniality: {player.MissC}
+                                    </PlayersRankedQueens>
+                                    <PlayersRankedQueens>
+                                        Golden Boot: {player.GoldenBoot}
+                                    </PlayersRankedQueens>
+                                    <PlayersRankedQueens>
+                                        Lever Queen: {player.leverQueen}
+                                    </PlayersRankedQueens>
+                                    <PlayersRankedQueens>
+                                        Lever Number: {player.leverNum}
+                                    </PlayersRankedQueens>
+                                    <PlayersRankedQueens>
+                                        Lip Sync Assassin: {player.lipSyncAssasin}
+                                    </PlayersRankedQueens>
+                                </Playersadditional>
+                            </PlayersListMainGrid>
+                        </AccordionDetails>
+                    </Accordion>
+                ))}
+            </PlayersAccordionWrapper>
         </BarChartMainGrid>
     )
 }

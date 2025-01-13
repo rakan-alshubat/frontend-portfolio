@@ -14,7 +14,7 @@ export default function calculatePoints(playerData, actualRankings, actualWinner
   
     for (let i = 0; i < actualWinners.length; i++) {
       if(actualWinners[i] === playerData.playerWinners[i]){
-        totalPoints += 7
+        totalPoints += 5
       }
         
     }
