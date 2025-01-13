@@ -2,6 +2,7 @@ import * as React from 'react';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
 import MenuItem from '@mui/material/MenuItem';
+import { TextField } from '@mui/material';
 import { 
     QueenSelectionMainGrid, 
     QueenSelectionNumbers, 
@@ -13,7 +14,6 @@ import {
     PlayerInfoSubmissionText,
     RankingSubmitButton
 } from './QueenSelection.styles';
-import { TextField } from '@mui/material';
 
 export default function QueenSelection() {
     // const [one, setOne] = React.useState('');
@@ -108,41 +108,41 @@ export default function QueenSelection() {
     // const handleLeverNumber = (event) => {
     //     setLeverNumber(event.target.value);
     // };
-    const createFile = async () => {
-        if(!rankings.includes('') && 
-            !rankings.some((val, i) => rankings.indexOf(val) !== i) &&
-            goldenBoot !== '' &&
-            missC !== '' &&
-            leverQueen !== '' &&
-            leverNumber !== '' &&
-            playerName !== '' &&
-            playerPassword !== '')
-        {
-            setError(false)
-            var playerData = {
-                "playerName": playerName,
-                "playerPassword": playerPassword,
-                "goldenBoot": goldenBoot,
-                "missC": missC,
-                "leverQueen": leverQueen,
-                "leverNumber": leverNumber,
-                "playerRankings": rankings,
-                "playerWinners": [],
-                "hasPlayerSwitched": false
-            }
-            const response = await fetch('/api/create-json', {
-                method: 'POST',
-                headers: {
-                    'Concent-Type': 'application/json'
-                },
-                body: JSON.stringify(playerData)
-            })
+    // const createFile = async () => {
+    //     if(!rankings.includes('') && 
+    //         !rankings.some((val, i) => rankings.indexOf(val) !== i) &&
+    //         goldenBoot !== '' &&
+    //         missC !== '' &&
+    //         leverQueen !== '' &&
+    //         leverNumber !== '' &&
+    //         playerName !== '' &&
+    //         playerPassword !== '')
+    //     {
+    //         setError(false)
+    //         var playerData = {
+    //             "playerName": playerName,
+    //             "playerPassword": playerPassword,
+    //             "goldenBoot": goldenBoot,
+    //             "missC": missC,
+    //             "leverQueen": leverQueen,
+    //             "leverNumber": leverNumber,
+    //             "playerRankings": rankings,
+    //             "playerWinners": [],
+    //             "hasPlayerSwitched": false
+    //         }
+    //         const response = await fetch('/api/create-json', {
+    //             method: 'POST',
+    //             headers: {
+    //                 'Concent-Type': 'application/json'
+    //             },
+    //             body: JSON.stringify(playerData)
+    //         })
 
 
-        }else{
-            setError(true)
-        }
-      }
+    //     }else{
+    //         setError(true)
+    //     }
+    //   }
     
 
     return(
@@ -150,7 +150,7 @@ export default function QueenSelection() {
         <QueenSelectionTitle>Rankings!</QueenSelectionTitle>
         <QueenSelectionSubTitle>Please Submit Your rankings BEFORE the start of the next episode.</QueenSelectionSubTitle>
         <QueenSelectionSubTitle>After that, submissions are CLOSED</QueenSelectionSubTitle>
-        <QueenSelectionMainGrid container>
+        {/* <QueenSelectionMainGrid container>
             <QueenSelectionNumbers item xs={0.5}>{1}</QueenSelectionNumbers>
             <QueenSelectionDropDown item xs={11.5}>
                     <FormControl fullWidth>
@@ -596,7 +596,7 @@ export default function QueenSelection() {
                         </Select>
                     </FormControl>
             </QueenSelectionDropDown>
-      </QueenSelectionMainGrid>
+      </QueenSelectionMainGrid> */}
         <PlayerInfoMainGrid container>
             <PlayerInfoSubmissionGrid item xs={3} md={1}>
                 <PlayerInfoSubmissionText>Player Name</PlayerInfoSubmissionText>
