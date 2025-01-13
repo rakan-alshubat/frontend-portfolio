@@ -14,7 +14,7 @@ export default function DragRace() {
         <WelcomeText
           title={'Rakan\'s Fantasy Drag Race League! :)'}
         />
-        <QueenSelection />
+        <BarChart />
       </>
     )
   }
