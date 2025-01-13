@@ -602,30 +602,30 @@ export default function QueenSelection() {
                 <PlayerInfoSubmissionText>Player Name</PlayerInfoSubmissionText>
             </PlayerInfoSubmissionGrid>
             <PlayerInfoSubmissionGrid item xs={9} md={11}>
-                <TextField 
+                {/* <TextField 
                     placeholder='Name'
                     value={playerName}
                     onChange={(e) => {
                         setPlayerName(e.target.value)
                     }}
-                />
+                /> */}
             </PlayerInfoSubmissionGrid>
             <PlayerInfoSubmissionGrid item xs={3} md={1}>
                 <PlayerInfoSubmissionText>Password</PlayerInfoSubmissionText>
             </PlayerInfoSubmissionGrid>
             <PlayerInfoSubmissionGrid item xs={9} md={2.5}>
-                <TextField 
+                {/* <TextField 
                     placeholder='Password'
                     value={playerPassword}
                     onChange={(e) => {
                         setPlayerPassword(e.target.value)
                     }}
-                />
+                /> */}
             </PlayerInfoSubmissionGrid>
             <PlayerInfoSubmissionGrid item xs={12} md={8.5}>
                 <PlayerInfoSubmissionText>PS: dont use a real password. This is all built by me and not really secure. you will use this password to submit your challenge winners every week</PlayerInfoSubmissionText>
             </PlayerInfoSubmissionGrid>
-            <RankingSubmitButton onClick={() => createFile()} variant='contained'>Submit!</RankingSubmitButton>
+            {/* <RankingSubmitButton onClick={() => createFile()} variant='contained'>Submit!</RankingSubmitButton> */}
             {error &&
                 <PlayerInfoSubmissionGrid item xs={12}>
                     <PlayerInfoSubmissionText color={'red'}>Please fill out all fields</PlayerInfoSubmissionText>
