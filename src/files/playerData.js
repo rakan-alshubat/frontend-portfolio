@@ -111,6 +111,34 @@ export const playerData = [
         lipSyncAssasin: 'Lana Ja\'Rae',
         bonusPoints: 0
     },
+    {
+        playerName: "Hannah Homie G",
+        playerRankings: [
+            "Lexi Love",
+            "Jewels Sparkles",
+            "Suzie Toot",
+            "Sam Star",
+            "Crystal Envy",
+            "Lydia B Kollins",
+            "Lucky Starzzz",
+            "Onya Nurve",
+            "Arrietty",
+            "Kori King",
+            "Joella",
+            "Hermona Lisa",
+            "Lana Ja'Rae",
+            "Acacia Forgot",
+        ],
+        playerWinners: [
+            ""
+        ],
+        MissC: 'Onya Nurve',
+        GoldenBoot: 'Acacia Forgot',
+        leverQueen: 'Jewels Sparkles',
+        leverNum: 1,
+        lipSyncAssasin: 'Crystal Envy',
+        bonusPoints: 0
+    },
     // {
     //     playerName: "",
     //     playerRankings: [
