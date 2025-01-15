@@ -14,7 +14,7 @@ export const playerData = [
             "Joella",
             "Crystal Envy",
             "Acacia Forgot",
-            "Hermona Lisa",
+            "Hormona Lisa",
             "Onya Nurve",
         ],
         playerWinners: [
@@ -42,7 +42,7 @@ export const playerData = [
             "Crystal Envy",
             "Lucky Starzzz",
             "Acacia Forgot",
-            "Hermona Lisa",
+            "Hormona Lisa",
             "Joella",
         ],
         playerWinners: [
@@ -71,7 +71,7 @@ export const playerData = [
             "Suzie Toot",
             "Acacia Forgot",
             "Joella",
-            "Hermona Lisa",
+            "Hormona Lisa",
         ],
         playerWinners: [
             ""
@@ -96,7 +96,7 @@ export const playerData = [
             "Crystal Envy",
             "Kori Kong",
             "Lucky Starzzz",
-            "Hermona Lisa",
+            "Hormona Lisa",
             "Sam Star",
             "Acacia Forgot",
             "Joella",
@@ -125,7 +125,7 @@ export const playerData = [
             "Arrietty",
             "Kori King",
             "Joella",
-            "Hermona Lisa",
+            "Hormona Lisa",
             "Lana Ja'Rae",
             "Acacia Forgot",
         ],
@@ -154,7 +154,7 @@ export const playerData = [
             "Lucky Starzzz",
             "Onya Nurve",
             "Joella",
-            "Hermona Lisa",
+            "Hormona Lisa",
             "Acacia Forgot",
         ],
         playerWinners: [
@@ -182,7 +182,7 @@ export const playerData = [
             "Crystal Envy",
             "Joella",
             "Acacia Forgot",
-            "Hermona Lisa",
+            "Hormona Lisa",
             "Onya Nurve",
         ],
         playerWinners: [
@@ -210,17 +210,45 @@ export const playerData = [
             "Lydia B Kollins",
             "Onya Nurve",
             "Acacia Forgot",
-            "Hermona Lisa",
+            "Hormona Lisa",
             "Joella",
         ],
         playerWinners: [
             ""
         ],
         MissC: 'Lexi Love',
-        GoldenBoot: 'Hermona Lisa',
+        GoldenBoot: 'Hormona Lisa',
         leverQueen: 'Lana Ja\'Rae',
         leverNum: 4,
         lipSyncAssasin: 'Arrietty',
+        bonusPoints: 0
+    },
+    {
+        playerName: "Kdawg",
+        playerRankings: [
+            "Lexi Love",
+            "Suzie Toot",
+            "Crystal Envy",
+            "Jewels Sparkles",
+            "Sam Star",
+            "Lucky Starzzz",
+            "Lydia B Kollins",
+            "Kori King",
+            "Arrietty",
+            "Lana Ja'Rae",
+            "Onya Nurve",
+            "Joella",
+            "Hormona Lisa",
+            "Acacia Forgot",
+        ],
+        playerWinners: [
+            ""
+        ],
+        MissC: 'Lexi Love',
+        GoldenBoot: 'Lana Ja\'Rae',
+        leverQueen: 'Joella',
+        leverNum: 4,
+        lipSyncAssasin: 'Crystal Envy',
         bonusPoints: 0
     },
     // {
