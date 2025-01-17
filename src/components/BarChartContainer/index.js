@@ -1,7 +1,7 @@
 import { BarChart } from '@mui/x-charts/BarChart';
 import {playerData} from '../../files/playerData'
 import calculatePoints from '@/helpers/calculatePoints'
-import { Accordion, AccordionSummary, AccordionDetails } from "@mui/material"
+import { Accordion, AccordionSummary, AccordionDetails, Grid } from "@mui/material"
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import gameData from '../../files/gameData'
 import {
@@ -15,7 +15,8 @@ import {
     PlayerAccordionSecondaryTitle,
     PlayersListMainGrid,
     PlayersRankedQueens,
-    Playersadditional
+    Playersadditional,
+    titleGrid
  } from "./BarChartContainer.styles";
 
 export default function BarChartContainer() {
@@ -46,6 +47,37 @@ export default function BarChartContainer() {
         return 0
     })
 
+  
+    var comboList = []
+    var count = 0
+    players.map((player) => {
+        if(comboList.length === 0){
+            comboList.push({
+                "playerName": player.playerName,
+                "totalPoints": player.totalPoints
+            })
+        }else if(comboList.length < 4){
+            var shouldAdd = false
+            comboList.map((ply) => {
+                if(player.totalPoints === ply.totalPoints){
+                    ply.playerName = ply.playerName + ' & ' + player.playerName
+                    shouldAdd = false;
+                    count++
+                }else{
+                    shouldAdd = true;
+                }
+            })
+            if(shouldAdd){
+                comboList.push({
+                    "playerName": player.playerName,
+                    "totalPoints": player.totalPoints
+                })
+            }
+        }
+    })
+    console.log(comboList)
+    console.log(count)
+
     var top3 = players.slice(0,3)
     var temp = top3[0]
     top3[0] = top3[1]
@@ -67,7 +99,7 @@ export default function BarChartContainer() {
                     xAxis={[{ 
                         scaleType: 'band', 
                         dataKey: 'playerName',
-                        tickFontSize: 30,
+                        tickFontSize: 26,
                         colorMap:
                         {
                             type: 'ordinal',
@@ -91,11 +123,10 @@ export default function BarChartContainer() {
                     },
                     // change all labels fontFamily shown on both xAxis and yAxis
                     "& .MuiChartsAxis-tickContainer .MuiChartsAxis-tickLabel":{
-                        fontFamily: '',
                         },
                         // change bottom label styles
                         "& .MuiChartsAxis-bottom .MuiChartsAxis-tickLabel":{
-                            fill:"black"
+                            fill:"black",
                         },
                         // bottomAxis Line Styles
                         "& .MuiChartsAxis-bottom .MuiChartsAxis-line":{
@@ -106,7 +137,7 @@ export default function BarChartContainer() {
                         "& .MuiChartsAxis-left .MuiChartsAxis-line":{
                         stroke:"#00000FF",
                         strokeWidth:0.4
-                        }
+                        },
                     }}
                 />
             </BarChartTop3Grid>
@@ -156,9 +187,20 @@ export default function BarChartContainer() {
             </BarChartBottomPlayersGrid>
             </>}
             <PlayersAccordionWrapper item xs={12}>
-                <PlayersHeader>
-                        Players:
-                </PlayersHeader>
+                <Grid container>
+                    <Grid item xs={4}>
+                        <PlayersHeader>
+                                Players: 
+                        </PlayersHeader>
+                    </Grid>
+                    <Grid item xs={8}>
+                        {hasItStarted && 
+                            <PlayerAccordionSecondaryTitle>
+                                    Maxi winner of the week: {gameData.winnersList[0]}
+                            </PlayerAccordionSecondaryTitle>
+                        }
+                    </Grid>
+                </Grid>
                 {playerData.map((player, index) => (
                     <Accordion key={index}>
                         <AccordionSummary
@@ -166,7 +208,7 @@ export default function BarChartContainer() {
                                 <PlayerAccordionMainTitle>
                                     {player.playerName}
                                 </PlayerAccordionMainTitle>
-                                {player.playerWinners[0] !== '' &&
+                                {player.playerWinners[0] !== '' && hasItStarted &&
                                 <PlayerAccordionSecondaryTitle>
                                     Players Maxi winner of the week: {player.playerWinners[0]}
                                 </PlayerAccordionSecondaryTitle>

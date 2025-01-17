@@ -13,11 +13,12 @@ export default function calculatePoints(playerData, actualRankings, actualWinner
     }
   
     for (let i = 0; i < actualWinners.length; i++) {
-      if(actualWinners[i] === playerData.playerWinners[i]){
+      if(actualWinners[i].includes(playerData.playerWinners[i]) && playerData.playerWinners[i] !== ''){
         totalPoints += 5
       }
-        
     }
+
+    totalPoints += playerData.bonusPoints;
   
     return totalPoints
   }

@@ -18,7 +18,6 @@ export const playerData = [
             "Onya Nurve",
         ],
         playerWinners: [
-            ""
         ],
         MissC: 'Suzie Toot',
         GoldenBoot: 'Onya Nurve',
@@ -46,7 +45,6 @@ export const playerData = [
             "Joella",
         ],
         playerWinners: [
-            ""
         ],
         MissC: 'Suzie Toot',
         GoldenBoot: 'Kori King',
@@ -74,7 +72,6 @@ export const playerData = [
             "Hormona Lisa",
         ],
         playerWinners: [
-            ""
         ],
         MissC: 'Jewels Sparkles',
         GoldenBoot: 'Suzie Toot',
@@ -102,7 +99,6 @@ export const playerData = [
             "Joella",
         ],
         playerWinners: [
-            ""
         ],
         MissC: 'Lucky Starzzz',
         GoldenBoot: 'Joella',
@@ -130,7 +126,6 @@ export const playerData = [
             "Acacia Forgot",
         ],
         playerWinners: [
-            ""
         ],
         MissC: 'Onya Nurve',
         GoldenBoot: 'Acacia Forgot',
@@ -158,7 +153,6 @@ export const playerData = [
             "Acacia Forgot",
         ],
         playerWinners: [
-            ""
         ],
         MissC: 'Lexi Love',
         GoldenBoot: 'Acacia Forgot',
@@ -186,7 +180,6 @@ export const playerData = [
             "Onya Nurve",
         ],
         playerWinners: [
-            ""
         ],
         MissC: 'Suzie Toot',
         GoldenBoot: 'Acacia Forgot',
@@ -214,7 +207,6 @@ export const playerData = [
             "Joella",
         ],
         playerWinners: [
-            ""
         ],
         MissC: 'Lexi Love',
         GoldenBoot: 'Hormona Lisa',
@@ -242,13 +234,93 @@ export const playerData = [
             "Acacia Forgot",
         ],
         playerWinners: [
-            ""
         ],
         MissC: 'Lexi Love',
         GoldenBoot: 'Lana Ja\'Rae',
         leverQueen: 'Joella',
         leverNum: 4,
         lipSyncAssasin: 'Crystal Envy',
+        bonusPoints: 0
+    },
+    {
+        playerName: "Imma",
+        playerRankings: [
+            "Suzie Toot",
+            "Lexi Love",
+            "Kori King",
+            "Jewels Sparkles",
+            "Crystal Envy",
+            "Arrietty",
+            "Lydia B Kollins",
+            "Lana Ja'Rae",
+            "Lucky Starzzz",
+            "Sam Star",
+            "Joella",
+            "Hormona Lisa",
+            "Acacia Forgot",
+            "Onya Nurve",
+        ],
+        playerWinners: [
+        ],
+        MissC: 'Lexi Love',
+        GoldenBoot: 'Joella',
+        leverQueen: 'Crystal Envy',
+        leverNum: 2,
+        lipSyncAssasin: 'Arrietty',
+        bonusPoints: 0
+    },
+    {
+        playerName: "Nathan",
+        playerRankings: [
+            "Lexi Love",
+            "Kori King",
+            "Jewels Sparkles",
+            "Crystal Envy",
+            "Suzie Toot",
+            "Sam Star",
+            "Lana Ja'Rae",
+            "Arrietty",
+            "Lucky Starzzz",
+            "Lydia B Kollins",
+            "Joella",
+            "Acacia Forgot",
+            "Onya Nurve",
+            "Hormona Lisa",
+        ],
+        playerWinners: [
+        ],
+        MissC: 'Lucky Starzzz',
+        GoldenBoot: 'Joella',
+        leverQueen: 'Arrietty',
+        leverNum: 2,
+        lipSyncAssasin: 'Lucky Starzzz',
+        bonusPoints: 0
+    },
+    {
+        playerName: "Roudell",
+        playerRankings: [
+            "Lexi Love",
+            "Jewels Sparkles",
+            "Suzie Toot",
+            "Lucky Starzzz",
+            "Arrietty",
+            "Kori King",
+            "Lana Ja'Rae",
+            "Crystal Envy",
+            "Onya Nurve",
+            "Sam Star",
+            "Lydia B Kollins",
+            "Hormona Lisa",
+            "Acacia Forgot",
+            "Joella",
+        ],
+        playerWinners: [
+        ],
+        MissC: 'Arrietty',
+        GoldenBoot: 'Joella',
+        leverQueen: 'Arrietty',
+        leverNum: 6,
+        lipSyncAssasin: 'Acacia Forgot',
         bonusPoints: 0
     },
     // {
@@ -270,7 +342,6 @@ export const playerData = [
     //         "",
     //     ],
     //     playerWinners: [
-    //         ""
     //     ],
     //     MissC: '',
     //     GoldenBoot: '',
