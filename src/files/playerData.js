@@ -323,6 +323,33 @@ export const playerData = [
         lipSyncAssasin: 'Acacia Forgot',
         bonusPoints: 0
     },
+    {
+        playerName: "Alessandra",
+        playerRankings: [
+            "Lexi Love",
+            "Kori King",
+            "Jewels Sparkles",
+            "Sam Star",
+            "Lucky Starzzz",
+            "Suzie Toot",
+            "Lana Ja'Rae",
+            "Arrietty",
+            "Onya Nurve",
+            "Crystal Envy",
+            "Lydia B Kollins",
+            "Joella",
+            "Acacia Forgot",
+            "Hormona Lisa",
+        ],
+        playerWinners: [
+        ],
+        MissC: 'Lexi Love',
+        GoldenBoot: 'Golden Boot',
+        leverQueen: 'Lana Ja\'Rae',
+        leverNum: 4,
+        lipSyncAssasin: 'Jewels Sparkles',
+        bonusPoints: 0
+    },
     // {
     //     playerName: "",
     //     playerRankings: [
