@@ -344,7 +344,7 @@ export const playerData = [
         playerWinners: [
         ],
         MissC: 'Lexi Love',
-        GoldenBoot: 'Golden Boot',
+        GoldenBoot: 'Onya Nurve',
         leverQueen: 'Lana Ja\'Rae',
         leverNum: 4,
         lipSyncAssasin: 'Jewels Sparkles',
