@@ -18,6 +18,7 @@ export const playerData = [
             "Onya Nurve",
         ],
         playerWinners: [
+            "Arrietty"
         ],
         MissC: 'Suzie Toot',
         GoldenBoot: 'Onya Nurve',
@@ -45,6 +46,7 @@ export const playerData = [
             "Joella",
         ],
         playerWinners: [
+            "Arrietty"
         ],
         MissC: 'Suzie Toot',
         GoldenBoot: 'Kori King',
@@ -72,6 +74,7 @@ export const playerData = [
             "Hormona Lisa",
         ],
         playerWinners: [
+            "Lydia B Kollins"
         ],
         MissC: 'Jewels Sparkles',
         GoldenBoot: 'Suzie Toot',
@@ -99,6 +102,7 @@ export const playerData = [
             "Joella",
         ],
         playerWinners: [
+            "Arrietty"
         ],
         MissC: 'Lucky Starzzz',
         GoldenBoot: 'Joella',
@@ -126,6 +130,7 @@ export const playerData = [
             "Acacia Forgot",
         ],
         playerWinners: [
+            "Arrietty"
         ],
         MissC: 'Onya Nurve',
         GoldenBoot: 'Acacia Forgot',
@@ -153,6 +158,7 @@ export const playerData = [
             "Acacia Forgot",
         ],
         playerWinners: [
+            "Lexi Love"
         ],
         MissC: 'Lexi Love',
         GoldenBoot: 'Acacia Forgot',
@@ -180,6 +186,7 @@ export const playerData = [
             "Onya Nurve",
         ],
         playerWinners: [
+            "Lucky Starzzz"
         ],
         MissC: 'Suzie Toot',
         GoldenBoot: 'Acacia Forgot',
@@ -207,6 +214,7 @@ export const playerData = [
             "Joella",
         ],
         playerWinners: [
+            "Sam Star"
         ],
         MissC: 'Lexi Love',
         GoldenBoot: 'Hormona Lisa',
@@ -234,6 +242,7 @@ export const playerData = [
             "Acacia Forgot",
         ],
         playerWinners: [
+            "Lucky Starzzz"
         ],
         MissC: 'Lexi Love',
         GoldenBoot: 'Lana Ja\'Rae',
@@ -261,6 +270,7 @@ export const playerData = [
             "Onya Nurve",
         ],
         playerWinners: [
+            "Arrietty"
         ],
         MissC: 'Lexi Love',
         GoldenBoot: 'Joella',
@@ -288,6 +298,7 @@ export const playerData = [
             "Hormona Lisa",
         ],
         playerWinners: [
+            "Lana Ja'Rae"
         ],
         MissC: 'Lucky Starzzz',
         GoldenBoot: 'Joella',
@@ -315,6 +326,7 @@ export const playerData = [
             "Joella",
         ],
         playerWinners: [
+            "Lucky Starzzz"
         ],
         MissC: 'Arrietty',
         GoldenBoot: 'Joella',
@@ -342,6 +354,7 @@ export const playerData = [
             "Hormona Lisa",
         ],
         playerWinners: [
+            "Lucky Starzzz"
         ],
         MissC: 'Lexi Love',
         GoldenBoot: 'Onya Nurve',
@@ -369,6 +382,7 @@ export const playerData = [
             "Joella",
         ],
         playerWinners: [
+            "Lydia B Kollins"
         ],
         MissC: 'Lydia B Kollins',
         GoldenBoot: 'Lucky Starzzz',

@@ -16,7 +16,8 @@ import {
     PlayersListMainGrid,
     PlayersRankedQueens,
     Playersadditional,
-    titleGrid
+    TitleGrid,
+    NamesTop3Grid
  } from "./BarChartContainer.styles";
 
 export default function BarChartContainer() {
@@ -30,6 +31,14 @@ export default function BarChartContainer() {
     ];
 
     var players = []
+
+    const colorOfText = (playerWinner, actualWinner) => {
+        if(playerWinner === actualWinner){
+            return 'green'
+        }else{
+            return 'red'
+        }
+    }
 
 
     playerData.map((player) => {
@@ -60,7 +69,7 @@ export default function BarChartContainer() {
             var shouldAdd = false
             comboList.map((ply) => {
                 if(player.totalPoints === ply.totalPoints){
-                    ply.playerName = ply.playerName + ' & ' + player.playerName
+                    ply.playerName = ply.playerName + ', ' + player.playerName
                     shouldAdd = false;
                     count++
                 }else{
@@ -75,15 +84,13 @@ export default function BarChartContainer() {
             }
         }
     })
-    console.log(comboList)
-    console.log(count)
 
-    var top3 = players.slice(0,3)
+    var top3 = comboList.slice(0,3)
     var temp = top3[0]
     top3[0] = top3[1]
     top3[1] = temp
 
-    var bottomPlayers = players.slice(3, players.length)
+    var bottomPlayers = players.slice(3+count, players.length)
     var bottomPlayersChartHeight = 50* players.length
 
     return(
@@ -126,7 +133,7 @@ export default function BarChartContainer() {
                         },
                         // change bottom label styles
                         "& .MuiChartsAxis-bottom .MuiChartsAxis-tickLabel":{
-                            fill:"black",
+                            display: 'none'
                         },
                         // bottomAxis Line Styles
                         "& .MuiChartsAxis-bottom .MuiChartsAxis-line":{
@@ -141,6 +148,17 @@ export default function BarChartContainer() {
                     }}
                 />
             </BarChartTop3Grid>
+            <NamesTop3Grid container>
+                <TitleGrid item xs={4}>
+                    {top3[0].playerName}
+                </TitleGrid>
+                <TitleGrid item xs={3}>
+                    {top3[1].playerName}
+                </TitleGrid>
+                <TitleGrid item xs={4}>
+                    {top3[2].playerName}
+                </TitleGrid>
+            </NamesTop3Grid>
             <BarChartBottomPlayersGrid item sm={8} xs={12}>
                 <Top3Text>
                     Bottom Queens
@@ -209,7 +227,7 @@ export default function BarChartContainer() {
                                     {player.playerName}
                                 </PlayerAccordionMainTitle>
                                 {player.playerWinners[0] !== '' && hasItStarted &&
-                                <PlayerAccordionSecondaryTitle>
+                                <PlayerAccordionSecondaryTitle sx={{color:colorOfText(player.playerWinners[0], gameData.winnersList[0])}}>
                                     Players Maxi winner of the week: {player.playerWinners[0]}
                                 </PlayerAccordionSecondaryTitle>
                                 }
