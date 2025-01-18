@@ -65,7 +65,7 @@ export const playerData = [
             "Lana Ja'Rae",
             "Onya Nurve",
             "Arrietty",
-            "Lucky Starzz",
+            "Lucky Starzzz",
             "Lydia B Kollins",
             "Crystal Envy",
             "Suzie Toot",
