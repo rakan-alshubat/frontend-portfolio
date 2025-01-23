@@ -391,31 +391,32 @@ export const playerData = [
         lipSyncAssasin: 'Onya Nurve',
         bonusPoints: 0
     },
-    // {
-    //     playerName: "",
-    //     playerRankings: [
-    //         "",
-    //         "",
-    //         "",
-    //         "",
-    //         "",
-    //         "",
-    //         "",
-    //         "",
-    //         "",
-    //         "",
-    //         "",
-    //         "",
-    //         "",
-    //         "",
-    //     ],
-    //     playerWinners: [
-    //     ],
-    //     MissC: '',
-    //     GoldenBoot: '',
-    //     leverQueen: '',
-    //     leverNum: 0,
-    //     lipSyncAssasin: '',
-    //     bonusPoints: 0
-    // },
+    {
+        playerName: "Tariq",
+        playerRankings: [
+            "Lexi Love",
+            "Kori King",
+            "Jewels Sparkles",
+            "Arrietty",
+            "Onya Nurve",
+            "Sam Star",
+            "Lydia B Kollins",
+            "Suzie Toot",
+            "Crystal Envy",
+            "Joella",
+            "Lana Ja'Rae",
+            "Hormona Lisa",
+            "Acacia Forgot",
+            "",
+        ],
+        playerWinners: [
+            ""
+        ],
+        MissC: 'Kori King',
+        GoldenBoot: 'Joella',
+        leverQueen: 'Onya Nurve',
+        leverNum: 1,
+        lipSyncAssasin: 'Jewels Sparkles',
+        bonusPoints: 0
+    },
 ]
