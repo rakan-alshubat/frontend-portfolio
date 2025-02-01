@@ -18,6 +18,7 @@ export const playerData = [
             "Onya Nurve",
         ],
         playerWinners: [
+            "Suzie Toot",
             "Jewels Sparkles",
             "Arrietty"
         ],
@@ -47,6 +48,7 @@ export const playerData = [
             "Joella",
         ],
         playerWinners: [
+            "Suzie Toot",
             "Onya Nurve",
             "Arrietty"
         ],
@@ -76,6 +78,7 @@ export const playerData = [
             "Hormona Lisa",
         ],
         playerWinners: [
+            "Lexi Love",
             "Onya Nurve",
             "Lydia B Kollins"
         ],
@@ -105,6 +108,7 @@ export const playerData = [
             "Joella",
         ],
         playerWinners: [
+            "Lexi Love",
             "Onya Nurve",
             "Arrietty"
         ],
@@ -134,6 +138,7 @@ export const playerData = [
             "Acacia Forgot",
         ],
         playerWinners: [
+            "Sam Star",
             "Suzie Toot",
             "Arrietty"
         ],
@@ -163,6 +168,7 @@ export const playerData = [
             "Acacia Forgot",
         ],
         playerWinners: [
+            "Lexi Love",
             "Jewels Sparkles",
             "Lexi Love"
         ],
@@ -192,6 +198,7 @@ export const playerData = [
             "Onya Nurve",
         ],
         playerWinners: [
+            "Kori King",
             "Jewels Sparkles",
             "Lucky Starzzz"
         ],
@@ -221,6 +228,7 @@ export const playerData = [
             "Joella",
         ],
         playerWinners: [
+            "Suzie Toot",
             "Lexi Love",
             "Sam Star"
         ],
@@ -251,6 +259,7 @@ export const playerData = [
         ],
         playerWinners: [
             "Suzie Toot",
+            "Suzie Toot",
             "Lucky Starzzz"
         ],
         MissC: 'Lexi Love',
@@ -279,6 +288,7 @@ export const playerData = [
             "Onya Nurve",
         ],
         playerWinners: [
+            "Suzie Toot",
             "Kori King",
             "Arrietty"
         ],
@@ -308,6 +318,7 @@ export const playerData = [
             "Hormona Lisa",
         ],
         playerWinners: [
+            "Sam Star",
             "Arrietty",
             "Lana Ja'Rae"
         ],
@@ -337,6 +348,7 @@ export const playerData = [
             "Joella",
         ],
         playerWinners: [
+            "Suzie Toot",
             "Kori King",
             "Lucky Starzzz"
         ],
@@ -366,6 +378,7 @@ export const playerData = [
             "Hormona Lisa",
         ],
         playerWinners: [
+            "Kori King",
             "Jewels Sparkles",
             "Lucky Starzzz"
         ],
@@ -395,6 +408,7 @@ export const playerData = [
             "Joella",
         ],
         playerWinners: [
+            "Jewels Sparkles",
             "Hormona Lisa",
             "Lydia B Kollins"
         ],
@@ -424,6 +438,7 @@ export const playerData = [
             "",
         ],
         playerWinners: [
+            "Suzie Toot",
             "Lexi Love",
             ""
         ],
