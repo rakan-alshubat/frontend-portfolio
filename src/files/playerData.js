@@ -27,7 +27,7 @@ export const playerData = [
         leverQueen: 'Arrietty',
         leverNum: 3,
         lipSyncAssasin: 'Jewels Sparkles',
-        bonusPoints: 0
+        bonusPoints: 5
     },
     {
         playerName: "Chace",
@@ -57,7 +57,7 @@ export const playerData = [
         leverQueen: 'Arrietty',
         leverNum: 1,
         lipSyncAssasin: 'Onya Nurve',
-        bonusPoints: 0
+        bonusPoints: 10
     },
     {
         playerName: "Justin",
@@ -147,7 +147,7 @@ export const playerData = [
         leverQueen: 'Jewels Sparkles',
         leverNum: 1,
         lipSyncAssasin: 'Crystal Envy',
-        bonusPoints: 0
+        bonusPoints: 5
     },
     {
         playerName: "JV",
@@ -177,7 +177,7 @@ export const playerData = [
         leverQueen: 'Arrietty',
         leverNum: 1,
         lipSyncAssasin: 'Jewels Sparkles',
-        bonusPoints: 0
+        bonusPoints: 10
     },
     {
         playerName: "Ben",
@@ -327,7 +327,7 @@ export const playerData = [
         leverQueen: 'Arrietty',
         leverNum: 2,
         lipSyncAssasin: 'Lucky Starzzz',
-        bonusPoints: 0
+        bonusPoints: 5
     },
     {
         playerName: "Roudell",
@@ -357,7 +357,7 @@ export const playerData = [
         leverQueen: 'Arrietty',
         leverNum: 6,
         lipSyncAssasin: 'Acacia Forgot',
-        bonusPoints: 0
+        bonusPoints: 5
     },
     {
         playerName: "Alessandra",
@@ -447,6 +447,6 @@ export const playerData = [
         leverQueen: 'Onya Nurve',
         leverNum: 1,
         lipSyncAssasin: 'Jewels Sparkles',
-        bonusPoints: 0
+        bonusPoints: 5
     },
 ]
