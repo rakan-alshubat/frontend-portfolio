@@ -17,12 +17,50 @@ import {
     PlayersRankedQueens,
     Playersadditional,
     TitleGrid,
-    NamesTop3Grid
+    NamesTop3Grid,
+    GameInfoGrid,
+    GameInfoItems,
+    winnersAccordion
  } from "./BarChartContainer.styles";
 
 export default function BarChartContainer() {
 
-      var hasItStarted = gameData.winnersList.length > 0
+    var hasItStarted = gameData.winnersList.length > 0
+    //var hasItEnded = gameData.eleminationsList.length === 14
+
+    var lipSyncAssasin = []
+    var maxWins = 0
+    var assassinText = ''
+
+    for(var i = 0; i < gameData.lipSyncWinners.length; i++){
+        
+        var wins = 0;
+
+        for(var j = 0; j < gameData.lipSyncWinners.length; j++){
+            if(gameData.lipSyncWinners[i] === gameData.lipSyncWinners[j]){
+                wins++
+            }
+        }
+
+        if(wins > maxWins){
+            maxWins = wins;
+            lipSyncAssasin = [gameData.lipSyncWinners[i]]
+        }else if(wins === maxWins && !lipSyncAssasin.includes(gameData.lipSyncWinners[i])){
+            lipSyncAssasin.push(gameData.lipSyncWinners[i])
+        }
+    }
+
+    for(var i = 0; i < lipSyncAssasin.length; i++){
+        assassinText += lipSyncAssasin[i] + " & "
+    }
+
+    assassinText = assassinText.substring(0, assassinText.length-3);
+
+    if(lipSyncAssasin.length > 1){
+        assassinText = "Current Lip Sync Assassins: " + assassinText
+    } else {
+        assassinText = "Current Lip Sync Assassin: " + assassinText
+    }
 
     const colors = [
         '#C0C0C0',
@@ -33,7 +71,19 @@ export default function BarChartContainer() {
     var players = []
 
     const colorOfText = (playerWinner, actualWinner) => {
-        if(playerWinner === actualWinner){
+        if(actualWinner != ''){
+            if(playerWinner === actualWinner){
+                return 'green'
+            }else{
+                return 'red'
+            }
+        }else{
+            return ''
+        }
+    }
+
+    const colorOfLSA = (playerWinner) => {
+        if(lipSyncAssasin.includes(playerWinner)){
             return 'green'
         }else{
             return 'red'
@@ -43,7 +93,7 @@ export default function BarChartContainer() {
 
     playerData.map((player) => {
         const name = player.playerName;
-        const points = calculatePoints(player, gameData.eleminationsList, gameData.winnersList)
+        const points = calculatePoints(player, gameData, lipSyncAssasin);
         players.push({
             "playerName": name,
             "totalPoints": points
@@ -204,16 +254,37 @@ export default function BarChartContainer() {
                     />
             </BarChartBottomPlayersGrid>
             </>}
+            <GameInfoGrid>
+                <Grid container>
+                    {hasItStarted &&
+                        <>
+                        <GameInfoItems item xs={12}>
+                            <>{assassinText}</>
+                        </GameInfoItems>
+                        <GameInfoItems item xs={12} md={6}>
+                            <>lever Queen: {gameData.leverQueen}</>
+                        </GameInfoItems>
+                        <GameInfoItems item xs={12} md={6}>
+                            <>lever: #{gameData.leverNum}</>
+                        </GameInfoItems>
+                        <GameInfoItems item xs={12} md={6}>
+                            <>Miss Congeniality: {gameData.missC}</>
+                        </GameInfoItems>
+                        <GameInfoItems item xs={12} md={6}>
+                            <>Golden Boot: {gameData.goldenBoot}</>
+                        </GameInfoItems>
+                        </>
+                    }
+                </Grid>
+            </GameInfoGrid>
+            <PlayersHeader>
+                Players 
+            </PlayersHeader>
             <PlayersAccordionWrapper item xs={12}>
                 <Grid container>
-                    <Grid item xs={4}>
-                        <PlayersHeader>
-                                Players: 
-                        </PlayersHeader>
-                    </Grid>
-                    <Grid item xs={8}>
+                    <Grid item xs={10.5}>
                         {hasItStarted && 
-                            <PlayerAccordionSecondaryTitle>
+                            <PlayerAccordionSecondaryTitle sx={{paddingBottom: '10px'}}>
                                     Maxi winner of the week: {gameData.winnersList[0]}
                             </PlayerAccordionSecondaryTitle>
                         }
@@ -245,27 +316,80 @@ export default function BarChartContainer() {
                                     </>
                                 ))}
                                 <Playersadditional>
-                                    <PlayersRankedQueens>
+                                    <PlayersRankedQueens sx={{color:colorOfText(player.MissC, gameData.missC)}}>
                                         Miss Congeniality: {player.MissC}
                                     </PlayersRankedQueens>
-                                    <PlayersRankedQueens>
+                                    <PlayersRankedQueens sx={{color:colorOfText(player.GoldenBoot, gameData.goldenBoot)}}>
                                         Golden Boot: {player.GoldenBoot}
                                     </PlayersRankedQueens>
-                                    <PlayersRankedQueens>
+                                    <PlayersRankedQueens sx={{color:colorOfText(player.leverQueen, gameData.leverQueen)}}>
                                         Lever Queen: {player.leverQueen}
                                     </PlayersRankedQueens>
-                                    <PlayersRankedQueens>
+                                    <PlayersRankedQueens sx={{color:colorOfText(player.leverNum, gameData.leverNum)}}>
                                         Lever Number: {player.leverNum}
                                     </PlayersRankedQueens>
-                                    <PlayersRankedQueens>
+                                    <PlayersRankedQueens sx={{color:colorOfLSA(player.lipSyncAssasin)}}>
                                         Lip Sync Assassin: {player.lipSyncAssasin}
+                                    </PlayersRankedQueens>
+                                    <PlayersRankedQueens>
+                                        Switched Queens: {player.firstQueensSwaped} & {player.secondQueensSwaped}
                                     </PlayersRankedQueens>
                                 </Playersadditional>
                             </PlayersListMainGrid>
+                            <Accordion sx={{width: '60%', marginTop: '10px', backgroundColor: '#b8fdfc'}}>
+                                <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+                                    Player winners list
+                                </AccordionSummary>
+                                <AccordionDetails>
+                                    {player.playerWinners.toReversed().map((winner, index) => (
+                                        <PlayersRankedQueens sx={{color:colorOfText(player.playerWinners.toReversed()[index], gameData.winnersList.toReversed()[index])}}>
+                                            Episode {index+3}: {winner}
+                                        </PlayersRankedQueens>
+                                    ))}
+                                </AccordionDetails>
+                            </Accordion>
                         </AccordionDetails>
                     </Accordion>
                 ))}
             </PlayersAccordionWrapper>
+            <Grid container>
+                <Grid item sx={12} md={4}>
+                    <Accordion sx={{marginTop: '10px', backgroundColor: '#b8fdfc', width: '100%'}}>
+                        <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+                            Elemination Order
+                        </AccordionSummary>
+                        {gameData.eleminationsList.toReversed().map((queen, index) => (
+                            <AccordionDetails>
+                                Episode {index+3}: {queen}
+                            </AccordionDetails>
+                        ))}
+                    </Accordion>
+                </Grid>
+                <Grid item sx={12} md={4}>
+                    <Accordion sx={{marginTop: '10px', backgroundColor: '#b8fdfc', width: '100%'}}>
+                        <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+                            Maxi Challenege Win Order
+                        </AccordionSummary>
+                        {gameData.winnersList.toReversed().map((queen, index) => (
+                            <AccordionDetails>
+                                Episode {index+3}: {queen}
+                            </AccordionDetails>
+                        ))}
+                    </Accordion>
+                </Grid>
+                <Grid item sx={12} md={4}>
+                    <Accordion sx={{marginTop: '10px', backgroundColor: '#b8fdfc', width: '100%'}}>
+                        <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+                            Lip Sync Winners
+                        </AccordionSummary>
+                        {gameData.lipSyncWinnersList.map((queen, index) => (
+                            <AccordionDetails>
+                                Episode {queen.episode}: {queen.winner}
+                            </AccordionDetails>
+                        ))}
+                    </Accordion>
+                </Grid>
+            </Grid>
         </BarChartMainGrid>
     )
 }
