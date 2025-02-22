@@ -1,4 +1,5 @@
-import { Accordion, Grid, Typography} from "@mui/material";
+import { rotate } from "@kurkle/color";
+import { Grid, Typography, Card } from "@mui/material";
 import { styled } from "@mui/material/styles";
 
 export const BarChartMainGrid = styled(Grid)(({ theme }) => ({
@@ -25,22 +26,13 @@ export const BarChartBottomPlayersGrid = styled(Grid)(({ theme }) => ({
     paddingLeft: theme.spacing(3)
 }));
 export const PlayersAccordionWrapper = styled(Grid)(({ theme }) => ({
+    marginTop: theme.spacing(4),
     width: '90%',
     padding: theme.spacing(5),
-    paddingTop: theme.spacing(2),
-    backgroundColor: 'lightgray'
-}));
-export const InfoAccordionWrapper = styled(Grid)(({ theme }) => ({
-    width: '90%',
-    marginTop: theme.spacing(20),
     backgroundColor: 'lightgray'
 }));
 export const PlayersHeader = styled(Typography)(({ theme }) => ({
     fontSize: theme.spacing(6),
-    display: 'flex',
-    alignItems:'center',
-    justifyContent:'center',
-    width: '90%',
     [theme.breakpoints.down('sm')]: {
         fontSize: theme.spacing(4),
     },
@@ -85,16 +77,5 @@ export const NamesTop3Grid = styled(Grid)(({ theme }) => ({
         fontSize: theme.spacing(2),
         width: '90%',
         marginTop: theme.spacing(-5),
-    },
-}));
-export const GameInfoGrid = styled(Grid)(({ theme }) => ({
-    width: '90%',
-}));
-export const GameInfoItems = styled(Grid)(({ theme }) => ({
-    display: 'flex',
-    justifyContent: 'center',
-    fontSize: theme.spacing(3.5),
-    [theme.breakpoints.down('sm')]: {
-        fontSize: theme.spacing(2),
     },
 }));
