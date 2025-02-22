@@ -99,7 +99,7 @@ export default function BarChartContainer() {
             <>
             <BarChartTop3Grid item sm={8} xs={12}>
                 <Top3Text>
-                    Top 3 Queens
+                    Top 3 Queens!
                 </Top3Text>
                 <BarChart
                     dataset={top3}
