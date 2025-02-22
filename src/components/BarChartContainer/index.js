@@ -341,8 +341,8 @@ export default function BarChartContainer() {
                                     Player winners list
                                 </AccordionSummary>
                                 <AccordionDetails>
-                                    {player.playerWinners.toReversed().map((winner, index) => (
-                                        <PlayersRankedQueens sx={{color:colorOfText(player.playerWinners.toReversed()[index], gameData.winnersList.toReversed()[index])}}>
+                                    {player.playerWinners.slice(0).reverse().map((winner, index) => (
+                                        <PlayersRankedQueens sx={{color:colorOfText(player.playerWinners.slice(0).reverse()[index], gameData.winnersList.slice(0).reverse()[index])}}>
                                             Episode {index+3}: {winner}
                                         </PlayersRankedQueens>
                                     ))}
@@ -358,7 +358,7 @@ export default function BarChartContainer() {
                         <AccordionSummary expandIcon={<ExpandMoreIcon />}>
                             Elemination Order
                         </AccordionSummary>
-                        {gameData.eleminationsList.toReversed().map((queen, index) => (
+                        {gameData.eleminationsList.slice(0).reverse().map((queen, index) => (
                             <AccordionDetails>
                                 Episode {index+3}: {queen}
                             </AccordionDetails>
@@ -370,7 +370,7 @@ export default function BarChartContainer() {
                         <AccordionSummary expandIcon={<ExpandMoreIcon />}>
                             Maxi Challenege Win Order
                         </AccordionSummary>
-                        {gameData.winnersList.toReversed().map((queen, index) => (
+                        {gameData.winnersList.slice(0).reverse().map((queen, index) => (
                             <AccordionDetails>
                                 Episode {index+3}: {queen}
                             </AccordionDetails>
