@@ -341,7 +341,14 @@ export default function BarChartContainer() {
             </PlayersAccordionWrapper>
             <Grid container>
                 <Grid item sx={12} md={4}>
-                    COME ON WORK!
+                    <Accordion sx={{marginTop: '10px', backgroundColor: '#b8fdfc', width: '100%'}}>
+                        <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+                            Elemination Order
+                        </AccordionSummary>
+                        <AccordionDetails>
+                            the order
+                        </AccordionDetails>
+                    </Accordion>
                 </Grid>
             </Grid>
         </BarChartMainGrid>
