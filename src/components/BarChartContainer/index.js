@@ -350,6 +350,26 @@ export default function BarChartContainer() {
                         </AccordionDetails>
                     </Accordion>
                 </Grid>
+                <Grid item sx={12} md={4}>
+                    <Accordion sx={{marginTop: '10px', backgroundColor: '#b8fdfc', width: '100%'}}>
+                        <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+                            Maxi Challenege Win Order
+                        </AccordionSummary>
+                        <AccordionDetails>
+                            the order
+                        </AccordionDetails>
+                    </Accordion>
+                </Grid>
+                <Grid item sx={12} md={4}>
+                    <Accordion sx={{marginTop: '10px', backgroundColor: '#b8fdfc', width: '100%'}}>
+                        <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+                            Lip Sync Winners
+                        </AccordionSummary>
+                        <AccordionDetails>
+                            the order
+                        </AccordionDetails>
+                    </Accordion>
+                </Grid>
             </Grid>
         </BarChartMainGrid>
     )
