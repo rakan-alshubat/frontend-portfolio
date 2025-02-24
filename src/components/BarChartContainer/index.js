@@ -43,7 +43,7 @@ export default function BarChartContainer() {
 
     playerData.map((player) => {
         const name = player.playerName;
-        const points = calculatePoints(player, gameData.eleminationsList, gameData.winnersList)
+        const points = calculatePoints(player, gameData)
         players.push({
             "playerName": name,
             "totalPoints": points

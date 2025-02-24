@@ -25,12 +25,13 @@ export const playerData = [
             "Jewels Sparkles",
             "Arrietty"
         ],
-        MissC: 'Suzie Toot',
-        GoldenBoot: 'Onya Nurve',
-        leverQueen: 'Arrietty',
+        MissC: "Suzie Toot",
+        GoldenBoot: "Onya Nurve",
+        leverQueen: "Arrietty",
         leverNum: 3,
-        lipSyncAssasin: 'Jewels Sparkles',
-        bonusPoints: 5
+        lipSyncAssasin: "Jewels Sparkles",
+        firstQueensSwaped: "Lucky Starzzz",
+        secondQueensSwaped: "Onya Nurve"
     },
     {
         playerName: "Chace",
@@ -58,12 +59,13 @@ export const playerData = [
             "Onya Nurve",
             "Arrietty"
         ],
-        MissC: 'Suzie Toot',
-        GoldenBoot: 'Kori King',
-        leverQueen: 'Arrietty',
+        MissC: "Suzie Toot",
+        GoldenBoot: "Kori King",
+        leverQueen: "Arrietty",
         leverNum: 1,
-        lipSyncAssasin: 'Onya Nurve',
-        bonusPoints: 10
+        lipSyncAssasin: "Onya Nurve",
+        firstQueensSwaped: "Lana Ja'Rae",
+        secondQueensSwaped: "Onya Nurve"
     },
     {
         playerName: "Justin",
@@ -91,12 +93,13 @@ export const playerData = [
             "Onya Nurve",
             "Lydia B Kollins"
         ],
-        MissC: 'Jewels Sparkles',
-        GoldenBoot: 'Suzie Toot',
-        leverQueen: 'Lana Ja\'Rae',
+        MissC: "Jewels Sparkles",
+        GoldenBoot: "Suzie Toot",
+        leverQueen: "Lana Ja'Rae",
         leverNum: 3,
-        lipSyncAssasin: 'Kori King',
-        bonusPoints: 0
+        lipSyncAssasin: "Kori King",
+        firstQueensSwaped: "Suzie Toot",
+        secondQueensSwaped: "Lucky Starzzz"
     },
     {
         playerName: "Minh",
@@ -124,12 +127,13 @@ export const playerData = [
             "Onya Nurve",
             "Arrietty"
         ],
-        MissC: 'Lucky Starzzz',
-        GoldenBoot: 'Joella',
-        leverQueen: 'Lydia B Kollins',
+        MissC: "Lucky Starzzz",
+        GoldenBoot: "Joella",
+        leverQueen: "Lydia B Kollins",
         leverNum: 3,
-        lipSyncAssasin: 'Lana Ja\'Rae',
-        bonusPoints: 0
+        lipSyncAssasin: "Lana Ja'Rae",
+        firstQueensSwaped: "Sam Star",
+        secondQueensSwaped: "Crystal Envy"
     },
     {
         playerName: "Hannah Homie G",
@@ -157,12 +161,13 @@ export const playerData = [
             "Suzie Toot",
             "Arrietty"
         ],
-        MissC: 'Onya Nurve',
-        GoldenBoot: 'Acacia Forgot',
-        leverQueen: 'Jewels Sparkles',
+        MissC: "Onya Nurve",
+        GoldenBoot: "Acacia Forgot",
+        leverQueen: "Jewels Sparkles",
         leverNum: 1,
-        lipSyncAssasin: 'Crystal Envy',
-        bonusPoints: 5
+        lipSyncAssasin: "Crystal Envy",
+        firstQueensSwaped: "Onya Nurve",
+        secondQueensSwaped: "Lexi Love"
     },
     {
         playerName: "JV",
@@ -190,12 +195,13 @@ export const playerData = [
             "Jewels Sparkles",
             "Lexi Love"
         ],
-        MissC: 'Lexi Love',
-        GoldenBoot: 'Acacia Forgot',
-        leverQueen: 'Arrietty',
+        MissC: "Lexi Love",
+        GoldenBoot: "Acacia Forgot",
+        leverQueen: "Arrietty",
         leverNum: 1,
-        lipSyncAssasin: 'Jewels Sparkles',
-        bonusPoints: 10
+        lipSyncAssasin: "Jewels Sparkles",
+        firstQueensSwaped: "Crystal Envy",
+        secondQueensSwaped: "Acacia Forgot"
     },
     {
         playerName: "Ben",
@@ -223,12 +229,13 @@ export const playerData = [
             "Jewels Sparkles",
             "Lucky Starzzz"
         ],
-        MissC: 'Suzie Toot',
-        GoldenBoot: 'Acacia Forgot',
-        leverQueen: 'Jewels Sparkles',
+        MissC: "Suzie Toot",
+        GoldenBoot: "Acacia Forgot",
+        leverQueen: "Jewels Sparkles",
         leverNum: 3,
-        lipSyncAssasin: 'Jewels Sparkles',
-        bonusPoints: 0
+        lipSyncAssasin: "Jewels Sparkles",
+        firstQueensSwaped: "Lucky Starzzz",
+        secondQueensSwaped: "Onya Nurve"
     },
     {
         playerName: "Sam",
@@ -256,12 +263,13 @@ export const playerData = [
             "Lexi Love",
             "Sam Star"
         ],
-        MissC: 'Lexi Love',
-        GoldenBoot: 'Hormona Lisa',
-        leverQueen: 'Lana Ja\'Rae',
+        MissC: "Lexi Love",
+        GoldenBoot: "Hormona Lisa",
+        leverQueen: "Lana Ja'Rae",
         leverNum: 4,
-        lipSyncAssasin: 'Arrietty',
-        bonusPoints: 0
+        lipSyncAssasin: "Arrietty",
+        firstQueensSwaped: "Onya Nurve",
+        secondQueensSwaped: "Lucky Starzzz"
     },
     {
         playerName: "Kdawg",
@@ -289,12 +297,13 @@ export const playerData = [
             "Suzie Toot",
             "Lucky Starzzz"
         ],
-        MissC: 'Lexi Love',
-        GoldenBoot: 'Lana Ja\'Rae',
-        leverQueen: 'Joella',
+        MissC: "Lexi Love",
+        GoldenBoot: "Lana Ja'Rae",
+        leverQueen: "Joella",
         leverNum: 4,
-        lipSyncAssasin: 'Crystal Envy',
-        bonusPoints: 0
+        lipSyncAssasin: "Crystal Envy",
+        firstQueensSwaped: "Crystal Envy",
+        secondQueensSwaped: "Onya Nurve"
     },
     {
         playerName: "Imma",
@@ -315,19 +324,19 @@ export const playerData = [
             "Crystal Envy",
         ],
         playerWinners: [
-            "Suzie Toot",
             "Onya Nurve",
             "Arrietty",
             "Suzie Toot",
             "Kori King",
             "Arrietty"
         ],
-        MissC: 'Lexi Love',
-        GoldenBoot: 'Joella',
-        leverQueen: 'Crystal Envy',
+        MissC: "Lexi Love",
+        GoldenBoot: "Joella",
+        leverQueen: "Crystal Envy",
         leverNum: 2,
-        lipSyncAssasin: 'Arrietty',
-        bonusPoints: 0
+        lipSyncAssasin: "Arrietty",
+        firstQueensSwaped: "Crystal Envy",
+        secondQueensSwaped: "Onya Nurve"
     },
     {
         playerName: "Nathan",
@@ -355,12 +364,13 @@ export const playerData = [
             "Arrietty",
             "Lana Ja'Rae"
         ],
-        MissC: 'Lucky Starzzz',
-        GoldenBoot: 'Joella',
-        leverQueen: 'Arrietty',
+        MissC: "Lucky Starzzz",
+        GoldenBoot: "Joella",
+        leverQueen: "Arrietty",
         leverNum: 2,
-        lipSyncAssasin: 'Lucky Starzzz',
-        bonusPoints: 5
+        lipSyncAssasin: "Lucky Starzzz",
+        firstQueensSwaped: "Onya Nurve",
+        secondQueensSwaped: "Crystal Envy"
     },
     {
         playerName: "Roudell",
@@ -388,12 +398,13 @@ export const playerData = [
             "Kori King",
             "Lucky Starzzz"
         ],
-        MissC: 'Arrietty',
-        GoldenBoot: 'Joella',
-        leverQueen: 'Arrietty',
+        MissC: "Arrietty",
+        GoldenBoot: "Joella",
+        leverQueen: "Arrietty",
         leverNum: 6,
-        lipSyncAssasin: 'Acacia Forgot',
-        bonusPoints: 5
+        lipSyncAssasin: "Acacia Forgot",
+        firstQueensSwaped: "Onya Nurve",
+        secondQueensSwaped: "Jewels Sparkles"
     },
     {
         playerName: "Alessandra",
@@ -421,12 +432,13 @@ export const playerData = [
             "Jewels Sparkles",
             "Lucky Starzzz"
         ],
-        MissC: 'Lexi Love',
-        GoldenBoot: 'Onya Nurve',
-        leverQueen: 'Lana Ja\'Rae',
+        MissC: "Lexi Love",
+        GoldenBoot: "Onya Nurve",
+        leverQueen: "Lana Ja'Rae",
         leverNum: 4,
-        lipSyncAssasin: 'Jewels Sparkles',
-        bonusPoints: 0
+        lipSyncAssasin: "Jewels Sparkles",
+        firstQueensSwaped: "Kori King",
+        secondQueensSwaped: "Onya Nurve"
     },
     {
         playerName: "Hannah Kelly",
@@ -454,12 +466,13 @@ export const playerData = [
             "Hormona Lisa",
             "Lydia B Kollins"
         ],
-        MissC: 'Lydia B Kollins',
-        GoldenBoot: 'Lucky Starzzz',
-        leverQueen: 'Lana Ja\'Rae',
+        MissC: "Lydia B Kollins",
+        GoldenBoot: "Lucky Starzzz",
+        leverQueen: "Lana Ja'Rae",
         leverNum: 4,
-        lipSyncAssasin: 'Onya Nurve',
-        bonusPoints: 0
+        lipSyncAssasin: "Onya Nurve",
+        firstQueensSwaped: "Onya Nurve",
+        secondQueensSwaped: "Lexi Love"
     },
     {
         playerName: "Tariq",
@@ -487,11 +500,12 @@ export const playerData = [
             "Lexi Love",
             ""
         ],
-        MissC: 'Kori King', 
-        GoldenBoot: 'Joella',
-        leverQueen: 'Onya Nurve',
+        MissC: "Kori King", 
+        GoldenBoot: "Joella",
+        leverQueen: "Onya Nurve",
         leverNum: 1,
-        lipSyncAssasin: 'Jewels Sparkles',
-        bonusPoints: 5
+        lipSyncAssasin: "Jewels Sparkles",
+        firstQueensSwaped: "Kori King",
+        secondQueensSwaped: "Suzie Toot"
     },
 ] 

@@ -13,5 +13,54 @@
         "Hormona Lisa",
         "Joella",
         "Lucky Starzzz"
-    ]
+    ],
+    "lipSyncWinners": [
+        "Suzie Toot",
+        "Lexi Love",
+        "Acacia Forgot",
+        "Joella",
+        "Kori King",
+        "Lydia B Kollins",
+        "Lana Ja'Rae",
+        "Lana Ja'Rae",
+        "Kori King"
+    ],
+    "lipSyncWinnersList": [
+        {
+            "episode": 1,
+            "winner": "Suzie Toot"
+        },
+        {
+            "episode": 2,
+            "winner": "Lexi Love & Acacia Forgot"
+        },
+        {
+            "episode": 3,
+            "winner": "Joella"
+        },
+        {
+            "episode": 4,
+            "winner": "Kori King"
+        },
+        {
+            "episode": 5,
+            "winner": "Lydia B Kollins"
+        },
+        {
+            "episode": 6,
+            "winner": "Lana Ja'Rae"
+        },
+        {
+            "episode": 7,
+            "winner": "Lana Ja'Rae"
+        },
+        {
+            "episode": 8,
+            "winner": "Lana Ja'Rae"
+        }
+    ],
+    "leverQueen": "Arrietty",
+    "leverNum": 1,
+    "missC": "",
+    "goldenBoot": ""
 }
