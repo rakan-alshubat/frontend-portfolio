@@ -68,9 +68,21 @@ export default function BarChartContainer() {
     ];
 
     var players = []
-
+    
     const colorOfText = (playerWinner, actualWinner) => {
-        if(playerWinner === actualWinner){
+        if(actualWinner != ''){
+            if(playerWinner === actualWinner){
+                return 'green'
+            }else{
+                return 'red'
+            }
+        }else{
+            return ''
+        }
+    }
+
+    const colorOfLSA = (playerWinner) => {
+        if(lipSyncAssasin.includes(playerWinner)){
             return 'green'
         }else{
             return 'red'
@@ -80,7 +92,7 @@ export default function BarChartContainer() {
 
     playerData.map((player) => {
         const name = player.playerName;
-        const points = calculatePoints(player, gameData)
+        const points = calculatePoints(player, gameData, lipSyncAssasin)
         players.push({
             "playerName": name,
             "totalPoints": points
@@ -303,20 +315,23 @@ export default function BarChartContainer() {
                                     </>
                                 ))}
                                 <Playersadditional>
-                                    <PlayersRankedQueens>
+                                    <PlayersRankedQueens sx={{color:colorOfText(player.MissC, gameData.missC)}}>
                                         Miss Congeniality: {player.MissC}
                                     </PlayersRankedQueens>
-                                    <PlayersRankedQueens>
+                                    <PlayersRankedQueens sx={{color:colorOfText(player.GoldenBoot, gameData.goldenBoot)}}>
                                         Golden Boot: {player.GoldenBoot}
                                     </PlayersRankedQueens>
-                                    <PlayersRankedQueens>
+                                    <PlayersRankedQueens sx={{color:colorOfText(player.leverQueen, gameData.leverQueen)}}>
                                         Lever Queen: {player.leverQueen}
                                     </PlayersRankedQueens>
-                                    <PlayersRankedQueens>
+                                    <PlayersRankedQueens sx={{color:colorOfText(player.leverNum, gameData.leverNum)}}>
                                         Lever Number: {player.leverNum}
                                     </PlayersRankedQueens>
-                                    <PlayersRankedQueens>
+                                    <PlayersRankedQueens sx={{color:colorOfLSA(player.lipSyncAssasin)}}>
                                         Lip Sync Assassin: {player.lipSyncAssasin}
+                                    </PlayersRankedQueens>
+                                    <PlayersRankedQueens>
+                                        Switched Queens: {player.firstQueensSwaped} & {player.secondQueensSwaped}
                                     </PlayersRankedQueens>
                                 </Playersadditional>
                             </PlayersListMainGrid>

@@ -1,4 +1,4 @@
-export default function calculatePoints(playerData, gameData){
+export default function calculatePoints(playerData, gameData, lipSyncAssasin){
   var totalPoints = 0; 
   var totalRankedQueens = gameData.eleminationsList.length
 
@@ -30,9 +30,9 @@ export default function calculatePoints(playerData, gameData){
   if(gameData.goldenBoot === playerData.goldenBoot){
     totalPoints += 5
   }
-  // if(lipSyncAssasin.includes(playerData.lipSyncAssasin)){
-  //   totalPoints += 5
-  // }
+  if(lipSyncAssasin.includes(playerData.lipSyncAssasin)){
+    totalPoints += 5
+  }
 
   return totalPoints
 }
