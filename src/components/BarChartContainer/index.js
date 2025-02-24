@@ -316,7 +316,7 @@ export default function BarChartContainer() {
                                         <PlayersRankedQueens item xs={1}>
                                             {index+1}
                                         </PlayersRankedQueens>
-                                        <PlayersRankedQueens item xs={11}>
+                                        <PlayersRankedQueens item xs={11} sx={{color:colorOfSwitch(queen, player.firstQueensSwaped, player.secondQueensSwaped)}}>
                                             {queen}
                                         </PlayersRankedQueens>
                                     </>
