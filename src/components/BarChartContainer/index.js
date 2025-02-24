@@ -368,7 +368,7 @@ export default function BarChartContainer() {
                         <AccordionDetails>
                             {gameData.lipSyncWinnersList.map((queen, index) => (
                                 <AccordionDetails>
-                                    Episode {queen.episode}: {queen.winner}
+                                    Episode
                                 </AccordionDetails>
                             ))}
                         </AccordionDetails>
