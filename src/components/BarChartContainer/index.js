@@ -89,13 +89,13 @@ export default function BarChartContainer() {
         }
     }    
     
-    const colorOfSwitch = (rankedQueen, firstQueen, secondQueen) => {
-        if(rankedQueen === firstQueen || rankedQueen === secondQueen){
-            return '#ec971c'
-        }else{
-            return ''
-        }
-    }
+    // const colorOfSwitch = (rankedQueen, firstQueen, secondQueen) => {
+    //     if(rankedQueen === firstQueen || rankedQueen === secondQueen){
+    //         return '#ec971c'
+    //     }else{
+    //         return ''
+    //     }
+    // }
 
     playerData.map((player) => {
         const name = player.playerName;
@@ -368,13 +368,6 @@ export default function BarChartContainer() {
                             Lip Sync Winners
                         </AccordionSummary>
                         <AccordionDetails>
-                            <>
-                                {gameData.lipSyncWinnersList.map((queen, index) => (
-                                    <PlayersRankedQueens sx={{paddingBottom: '10px'}}>
-                                        Episode
-                                    </PlayersRankedQueens>
-                                ))}
-                            </>
                         </AccordionDetails>
                     </Accordion>
                 </Grid>
