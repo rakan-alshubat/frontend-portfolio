@@ -59,6 +59,32 @@
             "winner": "Lana Ja'Rae"
         }
     ],
+    "eleminationOrder": [
+        {
+            "episode": 3,
+            "winner": "Lucky Starzzz"
+        },
+        {
+            "episode": 4,
+            "winner": "Joella"
+        },
+        {
+            "episode": 5,
+            "winner": "Arrietty (SAVED)"
+        },
+        {
+            "episode": 6,
+            "winner": "Hormona Lisa"
+        },
+        {
+            "episode": 7,
+            "winner": "Crystal Envy"
+        },
+        {
+            "episode": 8,
+            "winner": "Acacia Forgot"
+        }
+    ],
     "leverQueen": "Arrietty",
     "leverNum": 1,
     "missC": "",

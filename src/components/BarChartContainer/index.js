@@ -68,7 +68,7 @@ export default function BarChartContainer() {
     ];
 
     var players = []
-    
+
     const colorOfText = (playerWinner, actualWinner) => {
         if(actualWinner != ''){
             if(playerWinner === actualWinner){
@@ -339,6 +339,44 @@ export default function BarChartContainer() {
                     </Accordion>
                 ))}
             </PlayersAccordionWrapper>
+            <Grid container>
+                <Grid item sx={12} md={4}>
+                    <Accordion sx={{marginTop: '10px', backgroundColor: '#b8fdfc', width: '100%'}}>
+                        <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+                            Elemination Order
+                        </AccordionSummary>
+                        {gameData.eleminationOrder.map((queen, index) => (
+                            <AccordionDetails>
+                                Episode {queen.episode}: {queen.winner}
+                            </AccordionDetails>
+                        ))}
+                    </Accordion>
+                </Grid>
+                <Grid item sx={12} md={4}>
+                    <Accordion sx={{marginTop: '10px', backgroundColor: '#b8fdfc', width: '100%'}}>
+                        <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+                            Maxi Challenege Win Order
+                        </AccordionSummary>
+                        {gameData.winnersList.slice(0).reverse().map((queen, index) => (
+                            <AccordionDetails>
+                                Episode {index+3}: {queen}
+                            </AccordionDetails>
+                        ))}
+                    </Accordion>
+                </Grid>
+                <Grid item sx={12} md={4}>
+                    <Accordion sx={{marginTop: '10px', backgroundColor: '#b8fdfc', width: '100%'}}>
+                        <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+                            Lip Sync Winners
+                        </AccordionSummary>
+                        {gameData.lipSyncWinnersList.map((queen, index) => (
+                            <AccordionDetails>
+                                Episode {queen.episode}: {queen.winner}
+                            </AccordionDetails>
+                        ))}
+                    </Accordion>
+                </Grid>
+            </Grid>
         </BarChartMainGrid>
     )
 }
