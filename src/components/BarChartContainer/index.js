@@ -368,11 +368,13 @@ export default function BarChartContainer() {
                             Lip Sync Winners
                         </AccordionSummary>
                         <AccordionDetails>
-                            {gameData.lipSyncWinnersList.map((queen, index) => (
-                                <PlayersRankedQueens sx={{paddingBottom: '10px'}}>
-                                    Episode
-                                </PlayersRankedQueens>
-                            ))}
+                            <>
+                                {gameData.lipSyncWinnersList.map((queen, index) => (
+                                    <PlayersRankedQueens sx={{paddingBottom: '10px'}}>
+                                        Episode
+                                    </PlayersRankedQueens>
+                                ))}
+                            </>
                         </AccordionDetails>
                     </Accordion>
                 </Grid>
