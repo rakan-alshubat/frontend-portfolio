@@ -357,7 +357,7 @@ export default function BarChartContainer() {
                         <AccordionSummary expandIcon={<ExpandMoreIcon />}>
                             Maxi Challenege Win Order
                         </AccordionSummary>
-                        {gameData.winnersList.slice(0).reverse().map((queen, index) => (
+                        {gameData.winnersList.map((queen, index) => (
                             <AccordionDetails>
                                 Episode {index+3}: {queen}
                             </AccordionDetails>
