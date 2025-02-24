@@ -359,7 +359,7 @@ export default function BarChartContainer() {
                         </AccordionSummary>
                         {gameData.winnersList.map((queen, index) => (
                             <AccordionDetails>
-                                Episode {index+3}: {queen}
+                                Episode {index}: {queen}
                             </AccordionDetails>
                         ))}
                     </Accordion>
