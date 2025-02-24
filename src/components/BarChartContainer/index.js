@@ -339,18 +339,18 @@ export default function BarChartContainer() {
                                     </PlayersRankedQueens>
                                 </Playersadditional>
                             </PlayersListMainGrid>
-                            <Accordion sx={{width: '60%', marginTop: '10px', backgroundColor: '#b8fdfc'}}>
+                            {/* <Accordion sx={{width: '60%', marginTop: '10px', backgroundColor: '#b8fdfc'}}>
                                 <AccordionSummary expandIcon={<ExpandMoreIcon />}>
                                     Player winners list
                                 </AccordionSummary>
-                                <AccordionDetails>
+                                <AccordionDetails> */}
                                     {/* {player.playerWinners.slice(0).reverse().map((winner, index) => (
                                         <PlayersRankedQueens sx={{color:colorOfText(player.playerWinners.slice(0).reverse()[index], gameData.winnersList.slice(0).reverse()[index])}}>
                                             Episode {index+3}: {winner}
                                         </PlayersRankedQueens>
                                     ))} */}
-                                </AccordionDetails>
-                            </Accordion>
+                                {/* </AccordionDetails>
+                            </Accordion> */}
                         </AccordionDetails>
                     </Accordion>
                 ))}
@@ -392,7 +392,7 @@ export default function BarChartContainer() {
                         <AccordionDetails>
                             {gameData.lipSyncWinnersList.map((queen, index) => (
                                 <PlayersRankedQueens sx={{paddingBottom: '10px'}}>
-                                    Episode {queen.episode}: {queen.winner}
+                                    Episode
                                 </PlayersRankedQueens>
                             ))}
                         </AccordionDetails>
