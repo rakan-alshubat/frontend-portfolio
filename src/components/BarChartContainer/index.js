@@ -17,12 +17,49 @@ import {
     PlayersRankedQueens,
     Playersadditional,
     TitleGrid,
-    NamesTop3Grid
+    NamesTop3Grid,
+    GameInfoGrid,
+    GameInfoItems,
+    winnersAccordion
  } from "./BarChartContainer.styles";
 
 export default function BarChartContainer() {
 
-      var hasItStarted = gameData.winnersList.length > 0
+    var hasItStarted = gameData.winnersList.length > 0
+
+    var lipSyncAssasin = []
+    var maxWins = 0
+    var assassinText = ''
+
+    for(var i = 0; i < gameData.lipSyncWinners.length; i++){
+        
+        var wins = 0;
+
+        for(var j = 0; j < gameData.lipSyncWinners.length; j++){
+            if(gameData.lipSyncWinners[i] === gameData.lipSyncWinners[j]){
+                wins++
+            }
+        }
+
+        if(wins > maxWins){
+            maxWins = wins;
+            lipSyncAssasin = [gameData.lipSyncWinners[i]]
+        }else if(wins === maxWins && !lipSyncAssasin.includes(gameData.lipSyncWinners[i])){
+            lipSyncAssasin.push(gameData.lipSyncWinners[i])
+        }
+    }
+
+    for(var i = 0; i < lipSyncAssasin.length; i++){
+        assassinText += lipSyncAssasin[i] + " & "
+    }
+
+    assassinText = assassinText.substring(0, assassinText.length-3);
+
+    if(lipSyncAssasin.length > 1){
+        assassinText = "Current Lip Sync Assassins: " + assassinText
+    } else {
+        assassinText = "Current Lip Sync Assassin: " + assassinText
+    }
 
     const colors = [
         '#C0C0C0',
@@ -204,16 +241,37 @@ export default function BarChartContainer() {
                     />
             </BarChartBottomPlayersGrid>
             </>}
+            <GameInfoGrid>
+                <Grid container>
+                    {hasItStarted &&
+                        <>
+                        <GameInfoItems item xs={12}>
+                            <>{assassinText}</>
+                        </GameInfoItems>
+                        <GameInfoItems item xs={12} md={6}>
+                            <>lever Queen: {gameData.leverQueen}</>
+                        </GameInfoItems>
+                        <GameInfoItems item xs={12} md={6}>
+                            <>lever: #{gameData.leverNum}</>
+                        </GameInfoItems>
+                        <GameInfoItems item xs={12} md={6}>
+                            <>Miss Congeniality: {gameData.missC}</>
+                        </GameInfoItems>
+                        <GameInfoItems item xs={12} md={6}>
+                            <>Golden Boot: {gameData.goldenBoot}</>
+                        </GameInfoItems>
+                        </>
+                    }
+                </Grid>
+            </GameInfoGrid>
+            <PlayersHeader>
+                Players 
+            </PlayersHeader>
             <PlayersAccordionWrapper item xs={12}>
                 <Grid container>
-                    <Grid item xs={4}>
-                        <PlayersHeader>
-                                Players: 
-                        </PlayersHeader>
-                    </Grid>
-                    <Grid item xs={8}>
+                    <Grid item xs={10.5}>
                         {hasItStarted && 
-                            <PlayerAccordionSecondaryTitle>
+                            <PlayerAccordionSecondaryTitle sx={{paddingBottom: '10px'}}>
                                     Maxi winner of the week: {gameData.winnersList[0]}
                             </PlayerAccordionSecondaryTitle>
                         }
