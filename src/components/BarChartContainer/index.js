@@ -344,11 +344,11 @@ export default function BarChartContainer() {
                                     Player winners list
                                 </AccordionSummary>
                                 <AccordionDetails>
-                                    {player.playerWinners.slice(0).reverse().map((winner, index) => (
+                                    {/* {player.playerWinners.slice(0).reverse().map((winner, index) => (
                                         <PlayersRankedQueens sx={{color:colorOfText(player.playerWinners.slice(0).reverse()[index], gameData.winnersList.slice(0).reverse()[index])}}>
                                             Episode {index+3}: {winner}
                                         </PlayersRankedQueens>
-                                    ))}
+                                    ))} */}
                                 </AccordionDetails>
                             </Accordion>
                         </AccordionDetails>
@@ -362,11 +362,11 @@ export default function BarChartContainer() {
                             Elemination Order
                         </AccordionSummary>
                         <AccordionDetails>
-                            {gameData.eleminationOrder.map((queen, index) => (
+                            {/* {gameData.eleminationOrder.map((queen, index) => (
                                 <PlayersRankedQueens sx={{paddingBottom: '10px'}}>
                                     Episode {queen.episode}: {queen.winner}
                                 </PlayersRankedQueens>
-                            ))}
+                            ))} */}
                         </AccordionDetails>
                     </Accordion>
                 </Grid>
@@ -376,11 +376,11 @@ export default function BarChartContainer() {
                             Maxi Challenege Win Order
                         </AccordionSummary>
                         <AccordionDetails>
-                            {gameData.winnersList.slice(0).reverse().map((queen, index) => (
+                            {/* {gameData.winnersList.slice(0).reverse().map((queen, index) => (
                                 <PlayersRankedQueens sx={{paddingBottom: '10px'}}>
                                     Episode {index+3}: {queen}
                                 </PlayersRankedQueens>
-                            ))}
+                            ))} */}
                         </AccordionDetails>
                     </Accordion>
                 </Grid>
