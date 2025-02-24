@@ -87,8 +87,15 @@ export default function BarChartContainer() {
         }else{
             return 'red'
         }
+    }    
+    
+    const colorOfSwitch = (rankedQueen, firstQueen, secondQueen) => {
+        if(rankedQueen === firstQueen || rankedQueen === secondQueen){
+            return '#ec971c'
+        }else{
+            return ''
+        }
     }
-
 
     playerData.map((player) => {
         const name = player.playerName;
@@ -309,7 +316,7 @@ export default function BarChartContainer() {
                                         <PlayersRankedQueens item xs={1}>
                                             {index+1}
                                         </PlayersRankedQueens>
-                                        <PlayersRankedQueens item xs={11}>
+                                        <PlayersRankedQueens item xs={11} sx={{color: colorOfSwitch(queen, player.firstQueensSwaped, player.secondQueensSwaped)}}>
                                             {queen}
                                         </PlayersRankedQueens>
                                     </>
@@ -329,9 +336,6 @@ export default function BarChartContainer() {
                                     </PlayersRankedQueens>
                                     <PlayersRankedQueens sx={{color:colorOfLSA(player.lipSyncAssasin)}}>
                                         Lip Sync Assassin: {player.lipSyncAssasin}
-                                    </PlayersRankedQueens>
-                                    <PlayersRankedQueens>
-                                        Switched Queens: {player.firstQueensSwaped} & {player.secondQueensSwaped}
                                     </PlayersRankedQueens>
                                 </Playersadditional>
                             </PlayersListMainGrid>
