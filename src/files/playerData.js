@@ -324,6 +324,7 @@ export const playerData = [
             "Crystal Envy",
         ],
         playerWinners: [
+            "Suzie Toot",
             "Onya Nurve",
             "Arrietty",
             "Suzie Toot",
