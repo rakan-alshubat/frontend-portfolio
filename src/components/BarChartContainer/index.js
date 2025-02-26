@@ -20,6 +20,7 @@ import {
     NamesTop3Grid,
     GameInfoGrid,
     GameInfoItems,
+    PlayerWinnersAccordion
  } from "./BarChartContainer.styles";
 
 export default function BarChartContainer() {
@@ -338,7 +339,7 @@ export default function BarChartContainer() {
                                     </PlayersRankedQueens>
                                 </Playersadditional>
                             </PlayersListMainGrid>
-                            <Accordion sx={{width: '60%', marginTop: '10px', backgroundColor: '#b8fdfc'}}>
+                            <PlayerWinnersAccordion>
                                 <AccordionSummary expandIcon={<ExpandMoreIcon />}>
                                     Player winners list
                                 </AccordionSummary>
@@ -351,7 +352,7 @@ export default function BarChartContainer() {
                                         </>
                                     ))}
                                 </AccordionDetails>
-                            </Accordion>
+                            </PlayerWinnersAccordion>
                         </AccordionDetails>
                     </Accordion>
                 ))}

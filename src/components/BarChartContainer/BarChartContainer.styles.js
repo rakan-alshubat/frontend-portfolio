@@ -99,3 +99,11 @@ export const GameInfoItems = styled(Grid)(({ theme }) => ({
         fontSize: theme.spacing(2),
     },
 }));
+export const PlayerWinnersAccordion = styled(Accordion)(({ theme }) => ({
+    marginTop: '10px',
+    backgroundColor: '#b8fdfc',
+    width: '60%',
+    [theme.breakpoints.down('sm')]: {
+        width: '100%',
+    },
+}));
