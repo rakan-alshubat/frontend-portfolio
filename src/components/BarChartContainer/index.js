@@ -155,7 +155,7 @@ export default function BarChartContainer() {
             <>
             <BarChartTop3Grid item sm={8} xs={12}>
                 <Top3Text>
-                    Top 3 Queens!
+                    Top 3 Queens
                 </Top3Text>
                 <BarChart
                     dataset={top3}
@@ -350,6 +350,11 @@ export default function BarChartContainer() {
                             Elemination Order
                         </AccordionSummary>
                         <AccordionDetails>
+                            {gameData.eleminationOrder.map((queen) => (
+                                <>
+                                    Episode {queen.episode}: {queen.winner} <br/>
+                                </>
+                            ))}
                         </AccordionDetails>
                     </Accordion>
                 </Grid>
