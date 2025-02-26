@@ -366,7 +366,7 @@ export default function BarChartContainer() {
                         <AccordionDetails>
                             {gameData.winnersList.slice(0).reverse().map((queen, index) => (
                                 <>
-                                    Episode {index}: {queen} <br/>
+                                    Episode {index+3}: {queen} <br/>
                                 </>
                             ))}
                         </AccordionDetails>
