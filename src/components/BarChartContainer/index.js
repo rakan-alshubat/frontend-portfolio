@@ -155,7 +155,7 @@ export default function BarChartContainer() {
             <>
             <BarChartTop3Grid item sm={8} xs={12}>
                 <Top3Text>
-                    Top 3 Queens
+                    Top 3 Queens!
                 </Top3Text>
                 <BarChart
                     dataset={top3}
@@ -369,9 +369,9 @@ export default function BarChartContainer() {
                         </AccordionSummary>
                         <AccordionDetails>
                             {gameData.lipSyncWinnersList.map((queen) => (
-                                <PlayersRankedQueens>
-                                    Episode {queen.episode}: {queen.winner}
-                                </PlayersRankedQueens>
+                                <>
+                                    Episode {queen.episode}: {queen.winner} <br/>
+                                </>
                             ))}
                         </AccordionDetails>
                     </Accordion>
