@@ -94,6 +94,7 @@ export const GameInfoItems = styled(Grid)(({ theme }) => ({
     display: 'flex',
     justifyContent: 'center',
     fontSize: theme.spacing(3.5),
+    textAlign: 'center',
     [theme.breakpoints.down('sm')]: {
         fontSize: theme.spacing(2),
     },

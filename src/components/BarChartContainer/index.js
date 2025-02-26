@@ -20,7 +20,6 @@ import {
     NamesTop3Grid,
     GameInfoGrid,
     GameInfoItems,
-    winnersAccordion
  } from "./BarChartContainer.styles";
 
 export default function BarChartContainer() {
