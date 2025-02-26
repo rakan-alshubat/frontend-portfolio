@@ -345,9 +345,11 @@ export default function BarChartContainer() {
                                 </AccordionSummary>
                                 <AccordionDetails>
                                     {player.playerWinners.slice(0).reverse().map((winner, index) => (
-                                        <PlayersRankedQueens sx={{color:colorOfText(winner, gameData.winnersList.slice(0).reverse()[index])}}>
-                                            Episode {index+3}: {winner}
-                                        </PlayersRankedQueens>
+                                        <>
+                                            <PlayersRankedQueens sx={{color:colorOfText(winner, gameData.winnersList.slice(0).reverse()[index])}}>
+                                                Episode {index+3}: {winner}
+                                            </PlayersRankedQueens>
+                                        </>
                                     ))}
                                 </AccordionDetails>
                             </Accordion>
