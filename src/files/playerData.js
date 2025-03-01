@@ -115,7 +115,7 @@ export const playerData = [
             "Lydia B Kollins",
             "Arrietty",
             "Sam Star",
-            "Kori Kong",
+            "Kori King",
             "Lucky Starzzz",
             "Hormona Lisa",
             "Crystal Envy",
