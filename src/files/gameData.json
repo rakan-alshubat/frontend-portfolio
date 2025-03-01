@@ -1,5 +1,6 @@
 {
     "winnersList": [
+        "Jewels Sparkles",
         "Sam Star",
         "Onya Nurve",
         "Arrietty",
@@ -8,6 +9,7 @@
         "Sam Star"
     ],
     "eleminationsList": [
+        "Kori King",
         "Acacia Forgot",
         "Crystal Envy",
         "Hormona Lisa",
@@ -15,6 +17,7 @@
         "Lucky Starzzz"
     ],
     "lipSyncWinners": [
+        "Lydia B Kollins",
         "Suzie Toot",
         "Lexi Love",
         "Acacia Forgot",
@@ -57,6 +60,10 @@
         {
             "episode": 8,
             "winner": "Kori King"
+        },
+        {
+            "episode": 9,
+            "winner": "Lydia B Kollins"
         }
     ],
     "eleminationOrder": [
@@ -83,6 +90,10 @@
         {
             "episode": 8,
             "winner": "Acacia Forgot"
+        },
+        {
+            "episode": 9,
+            "winner": "Kori King"
         }
     ],
     "leverQueen": "Arrietty",
