@@ -97,6 +97,40 @@ export default function BarChartContainer() {
         }
     }
 
+    const position = (rankedQueen) => {
+        let pos;
+        if(gameData.eleminationsList.includes(rankedQueen)){
+            let queensLeft = 14-gameData.eleminationsList.length+1
+            pos = gameData.eleminationsList.findIndex(el => el === rankedQueen) + queensLeft
+            if(pos === 1){
+                pos += 'st'
+            }else if(pos === 2){
+                pos += 'nd'
+            }else if(pos === 3){
+                pos += 'rd'
+            }else{
+                pos += 'th'
+            }
+        }
+
+        return pos
+    }
+
+    const pointsGained = (rankedQueen, playerRankings) => {
+        let ptsGained
+        if(gameData.eleminationsList.includes(rankedQueen)){
+            ptsGained = '+'
+            let queensLeft = 14-gameData.eleminationsList.length+1
+            let playerPos = gameData.eleminationsList.findIndex(el => el === rankedQueen) + queensLeft
+            let actualPos = playerRankings.findIndex(el => el === rankedQueen)+1
+
+            ptsGained += 14 - (Math.abs(playerPos - actualPos))
+
+        }
+
+        return ptsGained
+    }
+
     playerData.map((player) => {
         const name = player.playerName;
         const points = calculatePoints(player, gameData, lipSyncAssasin)
@@ -313,11 +347,17 @@ export default function BarChartContainer() {
                             <PlayersListMainGrid container>
                                 {player.playerRankings.map((queen, index) => (
                                     <>
-                                        <PlayersRankedQueens item xs={1}>
+                                        <PlayersRankedQueens item xs={2}>
                                             {index+1}
                                         </PlayersRankedQueens>
-                                        <PlayersRankedQueens item xs={11} sx={{color:colorOfSwitch(queen, player.firstQueensSwaped, player.secondQueensSwaped)}}>
+                                        <PlayersRankedQueens item xs={6} sx={{color:colorOfSwitch(queen, player.firstQueensSwaped, player.secondQueensSwaped)}}>
                                             {queen}
+                                        </PlayersRankedQueens>
+                                        <PlayersRankedQueens item xs={2}>
+                                            {position(queen)}
+                                        </PlayersRankedQueens>
+                                        <PlayersRankedQueens item xs={2}>
+                                            {pointsGained(queen, player.playerRankings)}
                                         </PlayersRankedQueens>
                                     </>
                                 ))}
