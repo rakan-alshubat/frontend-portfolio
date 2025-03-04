@@ -58,7 +58,10 @@ export const PlayersListMainGrid = styled(Grid)(({ theme }) => ({
 
 }));
 export const PlayersRankedQueens = styled(Grid)(({ theme }) => ({
-    fontSize: theme.spacing(1.8)
+    fontSize: theme.spacing(2.3),
+    [theme.breakpoints.down('sm')]: {
+        fontSize: theme.spacing(1.7),
+    },
 }));
 export const Playersadditional = styled(Grid)(({ theme }) => ({
     paddingTop: theme.spacing(3)
