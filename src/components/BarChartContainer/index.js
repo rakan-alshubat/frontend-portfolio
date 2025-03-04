@@ -20,7 +20,9 @@ import {
     NamesTop3Grid,
     GameInfoGrid,
     GameInfoItems,
-    PlayerWinnersAccordion
+    PlayerWinnersAccordion,
+    PlayerInfoGrid,
+    PlayerInfoItems
  } from "./BarChartContainer.styles";
 
 export default function BarChartContainer() {
@@ -344,6 +346,17 @@ export default function BarChartContainer() {
                                 }
                         </AccordionSummary>
                         <AccordionDetails>
+                            <PlayerInfoGrid container>
+                                <PlayerInfoItems item xs={8}>
+                                    Player Rankings
+                                </PlayerInfoItems>
+                                <PlayerInfoItems item xs={2}>
+                                    Actual Position
+                                </PlayerInfoItems>
+                                <PlayerInfoItems item xs={2}>
+                                    Points Gained
+                                </PlayerInfoItems>
+                            </PlayerInfoGrid>
                             <PlayersListMainGrid container>
                                 {player.playerRankings.map((queen, index) => (
                                     <>

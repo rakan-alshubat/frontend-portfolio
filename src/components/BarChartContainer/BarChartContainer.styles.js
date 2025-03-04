@@ -107,3 +107,15 @@ export const PlayerWinnersAccordion = styled(Accordion)(({ theme }) => ({
         width: '100%',
     },
 }));
+export const PlayerInfoGrid = styled(Grid)(({ theme }) => ({
+    width: '90%',
+}));
+export const PlayerInfoItems = styled(Grid)(({ theme }) => ({
+    display: 'flex',
+    justifyContent: 'center',
+    fontSize: theme.spacing(3.5),
+    textAlign: 'center',
+    [theme.breakpoints.down('sm')]: {
+        fontSize: theme.spacing(1.1),
+    },
+}));
