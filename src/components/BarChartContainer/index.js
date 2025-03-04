@@ -99,6 +99,12 @@ export default function BarChartContainer() {
         }
     }
 
+    const pointstxt = (color) => {
+        if(color === 'green'){
+            return '+5'
+        }
+    }
+
     const position = (rankedQueen) => {
         let pos;
         if(gameData.eleminationsList.includes(rankedQueen)){
@@ -376,19 +382,19 @@ export default function BarChartContainer() {
                                 ))}
                                 <Playersadditional>
                                     <PlayersRankedQueens sx={{color:colorOfText(player.MissC, gameData.missC)}}>
-                                        Miss Congeniality: {player.MissC}
+                                        Miss Congeniality: {player.MissC} {pointstxt(colorOfText(player.MissC, gameData.missC))}
                                     </PlayersRankedQueens>
                                     <PlayersRankedQueens sx={{color:colorOfText(player.GoldenBoot, gameData.goldenBoot)}}>
-                                        Golden Boot: {player.GoldenBoot}
+                                        Golden Boot: {player.GoldenBoot} {pointstxt(colorOfText(player.GoldenBoot, gameData.goldenBoot))}
                                     </PlayersRankedQueens>
                                     <PlayersRankedQueens sx={{color:colorOfText(player.leverQueen, gameData.leverQueen)}}>
-                                        Lever Queen: {player.leverQueen}
+                                        Lever Queen: {player.leverQueen} {pointstxt(colorOfText(player.leverQueen, gameData.leverQueen))}
                                     </PlayersRankedQueens>
                                     <PlayersRankedQueens sx={{color:colorOfText(player.leverNum, gameData.leverNum)}}>
-                                        Lever Number: {player.leverNum}
+                                        Lever Number: {player.leverNum} {pointstxt(colorOfText(player.leverNum, gameData.leverNum))}
                                     </PlayersRankedQueens>
                                     <PlayersRankedQueens sx={{color:colorOfLSA(player.lipSyncAssasin)}}>
-                                        Lip Sync Assassin: {player.lipSyncAssasin}
+                                        Lip Sync Assassin: {player.lipSyncAssasin} {pointstxt(colorOfLSA(player.lipSyncAssasin))}
                                     </PlayersRankedQueens>
                                 </Playersadditional>
                             </PlayersListMainGrid>
@@ -400,7 +406,7 @@ export default function BarChartContainer() {
                                     {player.playerWinners.slice(0).reverse().map((winner, index) => (
                                         <>
                                             <PlayersRankedQueens sx={{color:colorOfText(winner, gameData.winnersList.slice(0).reverse()[index])}}>
-                                                Episode {index+3}: {winner}
+                                                Episode {index+3}: {winner} {pointstxt(colorOfText(winner, gameData.winnersList.slice(0).reverse()[index]))}
                                             </PlayersRankedQueens>
                                         </>
                                     ))}
