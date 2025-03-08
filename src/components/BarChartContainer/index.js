@@ -102,7 +102,7 @@ export default function BarChartContainer() {
     const pointstxt = (color) => {
         if(color === 'green'){
             return '+5'
-        }
+        } 
     }
 
     const position = (rankedQueen) => {
