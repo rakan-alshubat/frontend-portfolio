@@ -1,5 +1,6 @@
 {
     "winnersList": [
+        "Onya Nurve & Lexi Love",
         "Onya Nurve",
         "Lydia B Kollins",
         "Jewels Sparkles",
@@ -11,6 +12,7 @@
         "Sam Star"
     ],
     "eleminationsList": [
+        "Lana Ja'Rae",
         "Lydia B Kollins",
         "Arrietty", 
         "Kori King",
@@ -21,6 +23,7 @@
         "Lucky Starzzz"
     ],
     "lipSyncWinners": [
+        "Sam Star",
         "Lana Ja'Rae",
         "Jewels Sparkles",
         "Lydia B Kollins",
@@ -78,6 +81,10 @@
         {
             "episode": 11,
             "winner": "Lana Ja'Rae"
+        },
+        {
+            "episode": 12,
+            "winner": "Sam Star"
         }
     ],
     "eleminationOrder": [
@@ -116,10 +123,14 @@
         {
             "episode": 11,
             "winner": "Lydia B Kollins"
+        },
+        {
+            "episode": 12,
+            "winner": "Lana Ja'Rae"
         }
     ],
     "leverQueen": "Arrietty",
-    "leverNum": 1,
+    "leverNum": "1",
     "missC": "",
     "goldenBoot": ""
 }

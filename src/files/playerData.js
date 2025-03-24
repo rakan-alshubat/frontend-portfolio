@@ -18,6 +18,7 @@ export const playerData = [
             "Lucky Starzzz",
         ],
         playerWinners: [
+            "Lexi Love",
             "Onya Nurve",
             "Suzie Toot",
             "Jewels Sparkles",
@@ -31,7 +32,7 @@ export const playerData = [
         MissC: "Suzie Toot",
         GoldenBoot: "Onya Nurve",
         leverQueen: "Arrietty",
-        leverNum: 3,
+        leverNum: "3",
         lipSyncAssasin: "Jewels Sparkles",
         firstQueensSwaped: "Lucky Starzzz",
         secondQueensSwaped: "Onya Nurve"
@@ -55,6 +56,7 @@ export const playerData = [
             "Joella",
         ],
         playerWinners: [
+            "Lexi Love",
             "Onya Nurve",
             "Onya Nurve",
             "Jewels Sparkles",
@@ -68,7 +70,7 @@ export const playerData = [
         MissC: "Suzie Toot",
         GoldenBoot: "Kori King",
         leverQueen: "Arrietty",
-        leverNum: 1,
+        leverNum: "1",
         lipSyncAssasin: "Onya Nurve",
         firstQueensSwaped: "Lana Ja'Rae",
         secondQueensSwaped: "Onya Nurve"
@@ -93,6 +95,7 @@ export const playerData = [
         ],
         playerWinners: [
             "Lexi Love",
+            "Lexi Love",
             "Onya Nurve",
             "Jewels Sparkles",
             "Suzie Toot",
@@ -105,7 +108,7 @@ export const playerData = [
         MissC: "Jewels Sparkles",
         GoldenBoot: "Suzie Toot",
         leverQueen: "Lana Ja'Rae",
-        leverNum: 3,
+        leverNum: "3",
         lipSyncAssasin: "Kori King",
         firstQueensSwaped: "Suzie Toot",
         secondQueensSwaped: "Lucky Starzzz"
@@ -131,6 +134,7 @@ export const playerData = [
         playerWinners: [
             "Onya Nurve",
             "Onya Nurve",
+            "Onya Nurve",
             "Jewels Sparkles",
             "Sam Star",
             "Onya Nurve",
@@ -142,7 +146,7 @@ export const playerData = [
         MissC: "Lucky Starzzz",
         GoldenBoot: "Joella",
         leverQueen: "Lydia B Kollins",
-        leverNum: 3,
+        leverNum: "3",
         lipSyncAssasin: "Lana Ja'Rae",
         firstQueensSwaped: "Sam Star",
         secondQueensSwaped: "Crystal Envy"
@@ -166,6 +170,7 @@ export const playerData = [
             "Acacia Forgot",
         ],
         playerWinners: [
+            "Lexi Love",
             "Onya Nurve",
             "Sam Star",
             "Jewels Sparkles",
@@ -179,7 +184,7 @@ export const playerData = [
         MissC: "Onya Nurve",
         GoldenBoot: "Acacia Forgot",
         leverQueen: "Jewels Sparkles",
-        leverNum: 1,
+        leverNum: "1",
         lipSyncAssasin: "Crystal Envy",
         firstQueensSwaped: "Onya Nurve",
         secondQueensSwaped: "Lexi Love"
@@ -203,6 +208,7 @@ export const playerData = [
             "Crystal Envy",
         ],
         playerWinners: [
+            "Lexi Love",
             "Onya Nurve",
             "Jewels Sparkles",
             "Lexi Love",
@@ -216,7 +222,7 @@ export const playerData = [
         MissC: "Lexi Love",
         GoldenBoot: "Acacia Forgot",
         leverQueen: "Arrietty",
-        leverNum: 1,
+        leverNum: "1",
         lipSyncAssasin: "Jewels Sparkles",
         firstQueensSwaped: "Crystal Envy",
         secondQueensSwaped: "Acacia Forgot"
@@ -240,6 +246,7 @@ export const playerData = [
             "Lucky Starzzz",
         ],
         playerWinners: [
+            "Lexi Love",
             "Onya Nurve",
             "Suzie Toot",
             "Lydia B Kollins",
@@ -253,7 +260,7 @@ export const playerData = [
         MissC: "Suzie Toot",
         GoldenBoot: "Acacia Forgot",
         leverQueen: "Jewels Sparkles",
-        leverNum: 3,
+        leverNum: "3",
         lipSyncAssasin: "Jewels Sparkles",
         firstQueensSwaped: "Lucky Starzzz",
         secondQueensSwaped: "Onya Nurve"
@@ -278,6 +285,7 @@ export const playerData = [
         ],
         playerWinners: [
             "Jewels Sparkles",
+            "Jewels Sparkles",
             "Onya Nurve",
             "Sam Star",
             "Jewels Sparkles",
@@ -290,7 +298,7 @@ export const playerData = [
         MissC: "Lexi Love",
         GoldenBoot: "Hormona Lisa",
         leverQueen: "Lana Ja'Rae",
-        leverNum: 4,
+        leverNum: "4",
         lipSyncAssasin: "Arrietty",
         firstQueensSwaped: "Onya Nurve",
         secondQueensSwaped: "Lucky Starzzz"
@@ -315,6 +323,7 @@ export const playerData = [
         ],
         playerWinners: [
             "Suzie Toot",
+            "Suzie Toot",
             "Onya Nurve",
             "Arrietty",
             "Jewels Sparkles",
@@ -327,7 +336,7 @@ export const playerData = [
         MissC: "Lexi Love",
         GoldenBoot: "Lana Ja'Rae",
         leverQueen: "Joella",
-        leverNum: 4,
+        leverNum: "4",
         lipSyncAssasin: "Crystal Envy",
         firstQueensSwaped: "Crystal Envy",
         secondQueensSwaped: "Onya Nurve"
@@ -351,6 +360,7 @@ export const playerData = [
             "Crystal Envy",
         ],
         playerWinners: [
+            "Lexi Love",
             "Onya Nurve",
             "Lexi Love",
             "Jewels Sparkles",
@@ -364,7 +374,7 @@ export const playerData = [
         MissC: "Lexi Love",
         GoldenBoot: "Joella",
         leverQueen: "Crystal Envy",
-        leverNum: 2,
+        leverNum: "2",
         lipSyncAssasin: "Arrietty",
         firstQueensSwaped: "Crystal Envy",
         secondQueensSwaped: "Onya Nurve"
@@ -388,6 +398,7 @@ export const playerData = [
             "Hormona Lisa",
         ],
         playerWinners: [
+            "Lexi Love",
             "Suzie Toot",
             "Onya Nurve",
             "Jewels Sparkles",
@@ -401,7 +412,7 @@ export const playerData = [
         MissC: "Lucky Starzzz",
         GoldenBoot: "Joella",
         leverQueen: "Arrietty",
-        leverNum: 2,
+        leverNum: "2",
         lipSyncAssasin: "Lucky Starzzz",
         firstQueensSwaped: "Onya Nurve",
         secondQueensSwaped: "Crystal Envy"
@@ -425,6 +436,7 @@ export const playerData = [
             "Joella",
         ],
         playerWinners: [
+            "Lexi Love",
             "Sam Star",
             "Onya Nurve",
             "Sam Star",
@@ -438,7 +450,7 @@ export const playerData = [
         MissC: "Arrietty",
         GoldenBoot: "Joella",
         leverQueen: "Arrietty",
-        leverNum: 6,
+        leverNum: "6",
         lipSyncAssasin: "Acacia Forgot",
         firstQueensSwaped: "Onya Nurve",
         secondQueensSwaped: "Jewels Sparkles"
@@ -462,6 +474,7 @@ export const playerData = [
             "Hormona Lisa",
         ],
         playerWinners: [
+            "Lexi Love",
             "Sam Star",
             "Lexi Love",
             "Jewels Sparkles",
@@ -475,7 +488,7 @@ export const playerData = [
         MissC: "Lexi Love",
         GoldenBoot: "Onya Nurve",
         leverQueen: "Lana Ja'Rae",
-        leverNum: 4,
+        leverNum: "4",
         lipSyncAssasin: "Jewels Sparkles",
         firstQueensSwaped: "Kori King",
         secondQueensSwaped: "Onya Nurve"
@@ -499,6 +512,7 @@ export const playerData = [
             "Joella",
         ],
         playerWinners: [
+            "Lexi Love",
             "Onya Nurve",
             "Onya Nurve",
             "Jewels Sparkles",
@@ -512,7 +526,7 @@ export const playerData = [
         MissC: "Lydia B Kollins",
         GoldenBoot: "Lucky Starzzz",
         leverQueen: "Lana Ja'Rae",
-        leverNum: 4,
+        leverNum: "4",
         lipSyncAssasin: "Onya Nurve",
         firstQueensSwaped: "Onya Nurve",
         secondQueensSwaped: "Lexi Love"
@@ -538,6 +552,7 @@ export const playerData = [
         playerWinners: [
             "Onya Nurve",
             "Onya Nurve",
+            "Onya Nurve",
             "Jewels Sparkles",
             "Sam Star",
             "Onya Nurve",
@@ -549,7 +564,7 @@ export const playerData = [
         MissC: "Kori King", 
         GoldenBoot: "Joella",
         leverQueen: "Onya Nurve",
-        leverNum: 1,
+        leverNum: "1",
         lipSyncAssasin: "Jewels Sparkles",
         firstQueensSwaped: "Kori King",
         secondQueensSwaped: "Suzie Toot"

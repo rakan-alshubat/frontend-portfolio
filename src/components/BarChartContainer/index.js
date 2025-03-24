@@ -73,7 +73,7 @@ export default function BarChartContainer() {
 
     const colorOfText = (playerWinner, actualWinner) => {
         if(actualWinner != ''){
-            if(playerWinner === actualWinner){
+            if(actualWinner.includes(playerWinner)){
                 return 'green'
             }else{
                 return 'red'
