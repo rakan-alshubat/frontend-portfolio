@@ -18,6 +18,7 @@ export const playerData = [
             "Lucky Starzzz",
         ],
         playerWinners: [
+            "Sam Star",
             "Lexi Love",
             "Onya Nurve",
             "Suzie Toot",
