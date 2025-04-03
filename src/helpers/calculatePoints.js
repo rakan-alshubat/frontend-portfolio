@@ -4,7 +4,7 @@ export default function calculatePoints(playerData, gameData, lipSyncAssasin){
 
   for(const rankedQueen of gameData.eleminationsList){
     var QueenRanking = 15 - totalRankedQueens
-    var position = playerData.playerRankings.indexOf(rankedQueen) + 1
+    var position = playerData.playerRankings.indexOf(rankedQueen.queen) + 1
     var rankingPoints = 14 - (Math.abs(QueenRanking - position))
 
     totalRankedQueens -= 1;

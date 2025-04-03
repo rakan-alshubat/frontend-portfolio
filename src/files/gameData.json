@@ -13,15 +13,42 @@
         "Sam Star"
     ],
     "eleminationsList": [
-        "Lana Ja'Rae",
-        "Lydia B Kollins",
-        "Arrietty", 
-        "Kori King",
-        "Acacia Forgot",
-        "Crystal Envy",
-        "Hormona Lisa",
-        "Joella",
-        "Lucky Starzzz"
+        {
+            "rank": 6,
+            "queen": "Lana Ja'Rae"
+        },
+        {
+            "rank": 7,
+            "queen": "Lydia B Kollins"
+        },
+        {
+            "rank": 8,
+            "queen": "Arrietty"
+        },
+        {
+            "rank": 9,
+            "queen": "Kori King"
+        },
+        {
+            "rank": 10,
+            "queen": "Acacia Forgot"
+        },
+        {
+            "rank": 11,
+            "queen": "Crystal Envy"
+        },
+        {
+            "rank": 12,
+            "queen": "Hormona Lisa"
+        },
+        {
+            "rank": 13,
+            "queen": "Joella"
+        },
+        {
+            "rank": 14,
+            "queen": "Lucky Starzzz"
+        }
     ],
     "lipSyncWinners": [
         "Sam Star",

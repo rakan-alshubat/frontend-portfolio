@@ -107,17 +107,18 @@ export default function BarChartContainer() {
 
     const position = (rankedQueen) => {
         let pos;
-        if(gameData.eleminationsList.includes(rankedQueen)){
-            let queensLeft = 14-gameData.eleminationsList.length+1
-            pos = gameData.eleminationsList.findIndex(el => el === rankedQueen) + queensLeft
-            if(pos === 1){
-                pos += 'st'
-            }else if(pos === 2){
-                pos += 'nd'
-            }else if(pos === 3){
-                pos += 'rd'
-            }else{
-                pos += 'th'
+        for(const queens of gameData.eleminationsList){
+            if(rankedQueen === queens.queen){
+                pos = queens.rank
+                if(pos === 1){
+                    pos += 'st'
+                }else if(pos === 2){
+                    pos += 'nd'
+                }else if(pos === 3){
+                    pos += 'rd'
+                }else{
+                    pos += 'th'
+                }
             }
         }
 
@@ -126,14 +127,13 @@ export default function BarChartContainer() {
 
     const pointsGained = (rankedQueen, playerRankings) => {
         let ptsGained
-        if(gameData.eleminationsList.includes(rankedQueen)){
-            ptsGained = '+'
-            let queensLeft = 14-gameData.eleminationsList.length+1
-            let playerPos = gameData.eleminationsList.findIndex(el => el === rankedQueen) + queensLeft
-            let actualPos = playerRankings.findIndex(el => el === rankedQueen)+1
+        for(const queens of gameData.eleminationsList){
+            if(rankedQueen === queens.queen){
+                ptsGained = '+'
+                let actualPos = playerRankings.findIndex(el => el === rankedQueen)+1
 
-            ptsGained += 14 - (Math.abs(playerPos - actualPos))
-
+                ptsGained += 14 - (Math.abs(queens.rank - actualPos))
+            }
         }
 
         return ptsGained
@@ -197,7 +197,7 @@ export default function BarChartContainer() {
             <>
             <BarChartTop3Grid item sm={8} xs={12}>
                 <Top3Text>
-                    Top 3 Queens
+                    Top 3 Queens!
                 </Top3Text>
                 <BarChart
                     dataset={top3}
