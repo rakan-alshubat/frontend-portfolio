@@ -6,22 +6,14 @@ import Dogs from 'src/media/Dogs.jpg'
 import Camping from 'src/media/Camping.jpg'
 import Halloween from 'src/media/Halloween.jpg'
 import Festival from 'src/media/Festival.jpg'
-import { useWindowSize } from 'react-use'
-import Confetti from 'react-confetti'
 
 
 export default function Hobbies() {
-    const { width, height } = useWindowSize()
     return (
       <>
       <WelcomeText
         title={'Welcome to the hobbies page'}
         content={'The page is meant to give a glimse on who I am outside of a professional context. What I enjoy doing in my free time. If I match the skill set needed for the position, why not find out if I\'m a cultural fit too!'}
-      />
-      <Confetti
-        width={width}
-        height={height}
-        numberOfPieces={500}
       />
       {/* <PhotoTransitionTile 
         imageName={VideoGames}
