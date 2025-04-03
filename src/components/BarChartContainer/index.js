@@ -22,12 +22,14 @@ import {
     GameInfoItems,
     PlayerWinnersAccordion,
     PlayerInfoGrid,
-    PlayerInfoItems
+    PlayerInfoItems,
+    WinnerText
  } from "./BarChartContainer.styles";
 
 export default function BarChartContainer() {
 
     var hasItStarted = gameData.winnersList.length > 0
+    var hasItEnded = gameData.eleminationsList.length === 14
 
     var lipSyncAssasin = []
     var maxWins = 0
@@ -193,11 +195,24 @@ export default function BarChartContainer() {
 
     return(
         <BarChartMainGrid container>
+            {hasItEnded &&
+            <>
+                <BarChartTop3Grid item sm={8} xs={12}>
+                    <Top3Text>
+                        The Winner of the 2025 Drag League is...
+                    </Top3Text>
+                    <WinnerText>
+                        {top3[1].playerName}
+                    </WinnerText>
+
+                </BarChartTop3Grid>
+            </> 
+            }
             {hasItStarted &&
             <>
             <BarChartTop3Grid item sm={8} xs={12}>
                 <Top3Text>
-                    Top 3 Queens
+                    Top 3 Queens!
                 </Top3Text>
                 <BarChart
                     dataset={top3}

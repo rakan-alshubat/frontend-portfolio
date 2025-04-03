@@ -18,6 +18,15 @@ export const Top3Text = styled(Typography)(({ theme }) => ({
     justifyContent:'center',
     fontSize: theme.spacing(5)
 }));
+export const WinnerText = styled(Typography)(({ theme }) => ({
+    display: 'flex',
+    alignItems:'center',
+    justifyContent:'center',
+    fontSize: theme.spacing(45),
+    [theme.breakpoints.down('sm')]: {
+        fontSize: theme.spacing(16),
+    },
+}));
 export const BarChartBottomPlayersGrid = styled(Grid)(({ theme }) => ({
     direction: 'column',
     alignItems:'center',
