@@ -1,5 +1,6 @@
 {
     "winnersList": [
+        "Jewels Sparkles",
         "Sam Star",
         "Onya Nurve & Lexi Love",
         "Onya Nurve",
@@ -13,6 +14,10 @@
         "Sam Star"
     ],
     "eleminationsList": [
+        {
+            "rank": 5,
+            "queen": "Suzie Toot"
+        },
         {
             "rank": 6,
             "queen": "Lana Ja'Rae"
@@ -51,6 +56,7 @@
         }
     ],
     "lipSyncWinners": [
+        "Sam Star",
         "Sam Star",
         "Lana Ja'Rae",
         "Jewels Sparkles",
@@ -117,6 +123,10 @@
         {
             "episode": 13,
             "winner": "Double Shantay"
+        },
+        {
+            "episode": 14,
+            "winner": "Sam Star"
         }
     ],
     "eleminationOrder": [
@@ -163,6 +173,10 @@
         {
             "episode": 13,
             "winner": "Double Shantay"
+        },
+        {
+            "episode": 14,
+            "winner": "Suzie Toot"
         }
     ],
     "leverQueen": "Arrietty",
