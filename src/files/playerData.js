@@ -18,6 +18,7 @@ export const playerData = [
             "Lucky Starzzz",
         ],
         playerWinners: [
+            "Lydia B Kollins",
             "Lexi Love",
             "Sam Star",
             "Lexi Love",
@@ -58,6 +59,7 @@ export const playerData = [
             "Joella",
         ],
         playerWinners: [
+            "Kori King",
             "Jewels Sparkles",
             "Sam Star",
             "Lexi Love",
@@ -98,6 +100,7 @@ export const playerData = [
             "Hormona Lisa",
         ],
         playerWinners: [
+            "Kori King",
             "Jewels Sparkles",
             "Sam Star",
             "Lexi Love",
@@ -138,6 +141,7 @@ export const playerData = [
             "Joella",
         ],
         playerWinners: [
+            "Suzie Toot",
             "Jewels Sparkles",
             "Sam Star",
             "Onya Nurve",
@@ -178,6 +182,7 @@ export const playerData = [
             "Acacia Forgot",
         ],
         playerWinners: [
+            "Lydia B Kollins",
             "Onya Nurve",
             "Sam Star",
             "Lexi Love",
@@ -218,6 +223,7 @@ export const playerData = [
             "Crystal Envy",
         ],
         playerWinners: [
+            "Lucky Starzzz",
             "Jewels Sparkles",
             "Lexi Love",
             "Lexi Love",
@@ -258,6 +264,7 @@ export const playerData = [
             "Lucky Starzzz",
         ],
         playerWinners: [
+            "Suzie Toot",
             "Jewels Sparkles",
             "Suzie Toot",
             "Lexi Love",
@@ -298,6 +305,7 @@ export const playerData = [
             "Joella",
         ],
         playerWinners: [
+            "Lydia B Kollins",
             "Onya Nurve",
             "Jewels Sparkles",
             "Jewels Sparkles",
@@ -338,6 +346,7 @@ export const playerData = [
             "Acacia Forgot",
         ],
         playerWinners: [
+            "Lydia B Kollins",
             "Onya Nurve",
             "Onya Nurve",
             "Suzie Toot",
@@ -378,6 +387,7 @@ export const playerData = [
             "Crystal Envy",
         ],
         playerWinners: [
+            "Lana Ja'Rae",
             "Lexi Love",
             "Jewels Sparkles",
             "Lexi Love",
@@ -418,6 +428,7 @@ export const playerData = [
             "Hormona Lisa",
         ],
         playerWinners: [
+            "Lydia B Kollins",
             "Jewels Sparkles",
             "Sam Star",
             "Lexi Love",
@@ -458,6 +469,7 @@ export const playerData = [
             "Joella",
         ],
         playerWinners: [
+            "Lydia B Kollins",
             "Jewels Sparkles",
             "Sam Star",
             "Lexi Love",
@@ -498,6 +510,7 @@ export const playerData = [
             "Hormona Lisa",
         ],
         playerWinners: [
+            "Lydia B Kollins",
             "Suzie Toot",
             "Jewels Sparkles",
             "Lexi Love",
@@ -538,6 +551,7 @@ export const playerData = [
             "Joella",
         ],
         playerWinners: [
+            "Lydia B Kollins",
             "Jewels Sparkles",
             "Lexi Love",
             "Lexi Love",
@@ -578,6 +592,7 @@ export const playerData = [
             "",
         ],
         playerWinners: [
+            "Kori King",
             "Jewels Sparkles",
             "Suzie Toot",
             "Onya Nurve",

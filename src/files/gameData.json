@@ -1,5 +1,6 @@
 {
     "winnersList": [
+        "Suzie Toot",
         "Jewels Sparkles",
         "Sam Star",
         "Onya Nurve & Lexi Love",
@@ -69,7 +70,15 @@
         "Lydia B Kollins",
         "Lana Ja'Rae",
         "Lana Ja'Rae",
-        "Kori King"
+        "Kori King",
+        "Suzie Toot",
+        "Suzie Toot",
+        "Suzie Toot",
+        "Kori King",
+        "Kori King",
+        "Lydia B Kollins",
+        "Lana Ja'Rae",
+        "Lucky Starzzz"
     ],
     "lipSyncWinnersList": [
         {
@@ -127,6 +136,10 @@
         {
             "episode": 14,
             "winner": "Sam Star"
+        },
+        {
+            "episode": 15,
+            "winner": "Suzie Toot x3, Kori King x2, Lydia B Kollins, Lana Ja'Rae, Lucky Starzzz"
         }
     ],
     "eleminationOrder": [
