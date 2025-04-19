@@ -24,7 +24,7 @@ export default function MyApp(props) {
       <ThemeProvider theme={theme}>
         <CssBaseline />
         <div style={{ backgroundImage: `url(${Background.src})`, backgroundSize: 'cover', backgroundSize: 'f'}}>.
-          <Component {...pageProps} />.
+          <Component {...pageProps} />
         </div>
       </ThemeProvider>
     </CacheProvider>

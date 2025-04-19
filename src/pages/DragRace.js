@@ -15,10 +15,10 @@ export default function DragRace() {
         />
         {hasItEnded &&
           <Confetti
-            width={width}
-            height={height}
-            numberOfPieces={500}
-          />
+          width={width}
+          height={height}
+          numberOfPieces={500}
+        />
         }
         <BarChart />
       </>

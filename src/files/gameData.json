@@ -1,5 +1,6 @@
 {
     "winnersList": [
+        "Onya Nurve",
         "Suzie Toot",
         "Jewels Sparkles",
         "Sam Star",
@@ -15,6 +16,22 @@
         "Sam Star"
     ],
     "eleminationsList": [
+        {
+            "rank": 1,
+            "queen": "Onya Nurve"
+        },
+        {
+            "rank": 2,
+            "queen": "Jewels Sparkles"
+        },
+        {
+            "rank": 3,
+            "queen": "Lexi Love"
+        },
+        {
+            "rank": 3,
+            "queen": "Sam Star"
+        },
         {
             "rank": 5,
             "queen": "Suzie Toot"
